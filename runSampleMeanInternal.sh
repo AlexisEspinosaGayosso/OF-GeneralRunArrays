@@ -306,12 +306,14 @@ cd $baseDir/$workingDir
 #-------------------------------------------------------------------------
 #-------------------------------------------------------------------------
 #Defining a Cycle for revising what is still needed to sample as a Mean
-cd $baseDir/$workingDir
+cd $baseDir/$workingDir/postProcessing
 echo "Defining the list of directories to check" | tee -a ${logJob}
-checkingDirectories={pressureMeanRings velocityMeanRings arrayMeanLines ADDITIONAL_velocityMeanRings ADDITIONAL_pressureMeanRings}
-checkingFiles={.doneMeanPRing .doneMeanURing .doneMeanUPLines .doneMeanUAdditionalRing .doneMeanPAdditionalRing}
-i=5
-ls -dt forces_cylinder*/ | sed 's/\///g' > listaDirs.Borra
+checkingDirectories=(pressureMeanRings velocityMeanRings arrayMeanLines ADDITIONAL_velocityMeanRings ADDITIONAL_pressureMeanRings)
+checkingFiles=(.doneMeanPRing .doneMeanURing .doneMeanUPLines .doneMeanUAdditionalRing .doneMeanPAdditionalRing)
+#   Number of elements in the array so far
+i=${#checkingDirectories[@]}
+#   Adding the folders of the forces for each collector
+ls -dt meanForces_cylinder*/ | sed 's/\///g' > listaDirs.Borra
 sort -rn listaDirs.Borra > listaDirsOrdenada.Borra
 while read textForceDir
 do
@@ -319,30 +321,30 @@ do
     checkingFiles[$i]=.doneMeanForces
     ((i++))
 done < listaDirsOrdenada.Borra
-nCheckDirectories=$i
+nCheckDirectories=$(($i - 1))
 
 #Starting Cycle for all the checked directories
 for j in `seq 0 ${nCheckDirectories}`; do
    echo "Checking status for Directory ${checkingDirectories[$j]}"| tee -a ${logJob}
    #-------------------------------------------------------------------------
    #-------------------------------------------------------------------------
-   #Checking if directory (as pressureMeanRings) exists
-   cd $baseDir/$workingDir
-   if [ -d ./postProcessing/${checkingDirectories[$j]} ] && [ -f ./postProcessing/${checkingFiles[$j]} ]; then
-      echo "Directory ${checkingDirectories[$j]} is done. Will check if new mean is neccesary."| tee -a ${logJob}
-      checkForNewMeanP=true
+   #Checking if directory (e.g. pressureMeanRings) exists
+   cd $baseDir/$workingDir/postProcessing
+   if [ -d ./${checkingDirectories[$j]} ] && [ -f ./${checkingFiles[$j]} ]; then   
+      echo "Directory ${checkingDirectories[$j]} is yep done. Will check if new mean is neccesary."| tee -a ${logJob}
+      checkForNewMean=true
    else
       echo "Directory ${checkingDirectories[$j]} is not done, will keep going as normal."| tee -a ${logJob}
-      checkForNewMeanP=false
+      checkForNewMean=false
    fi
 
    #-------------------------------------------------------------------------
    #-------------------------------------------------------------------------
-   #Checking times in directory (as pressureMeanRings)
-   cd $baseDir/$workingDir
+   #Checking times in directory (e.g. pressureMeanRings)
+   cd $baseDir/$workingDir/postProcessing
    if [ "$checkForNewMean" = "true" ]; then
-      cd ./postProcessing/${checkingDirectories[$j]}
-      echo "Reading a list of existing time directories" | tee -a ${logJob}
+      cd ./${checkingDirectories[$j]}
+      echo "Reading a list of existing times in ${checkingDirectories[$j]}" | tee -a ${logJob}
       ls -dt [0-9]*/ | sed 's/\///g' > listaDirs.Borra
       sort -rn listaDirs.Borra > listaDirsOrdenada.Borra
       i=0
@@ -361,26 +363,25 @@ for j in `seq 0 ${nCheckDirectories}`; do
          exit 4
       else
           maxMeanSeen=${meanDirArr[0]}
-          echo "The maxMeanSeen is $maxMeanSeen" | tee -a ${logJob}
+          echo "The maxMeanSeen in ${checkingDirectories[$j]} is $maxMeanSeen" | tee -a ${logJob}
       fi
    fi
-   cd $baseDir/$workingDir
 
    #-------------------------------------------------------------------------
    #-------------------------------------------------------------------------
    #.done files wont be deleted if maxMeanSeen >= endTime (which flags for Means already done)
-   cd $baseDir/$workingDir
-   if [ "$checkForNewMean" = "true" ] && [ float_cond "$maxMeanSeen >= $endTime" ]; then
-      echo "Leaving .done files as they are. Means already processed." | tee -a ${logJob}
+   cd $baseDir/$workingDir/postProcessing
+   if [ "$checkForNewMean" = "true" ] && float_cond "$maxMeanSeen >= $endTime"; then   
+      echo "Leaving file: ${checkingFiles[$j]} as it is. Means already processed." | tee -a ${logJob}
       echo "maxMeanSeen:${maxMeanSeen} >= endTime:${endTime}" | tee -a ${logJob}
    else
       if [ "$checkForNewMean" = "true" ]; then
-         echo "Removing .done files as a new Mean has been detected" | tee -a ${logJob}
+         echo "Removing .done file: ${checkingFiles[$j]} as a new Mean has been detected" | tee -a ${logJob}
          echo "maxMeanSeen:${maxMeanSeen} < endTime:${endTime}" | tee -a ${logJob}
       else
-         echo "Removing .done files as ${checkingDirectories[$j]} is not done" | tee -a ${logJob}
+         echo "Removing .done file: ${checkingFiles[$j]} as ${checkingDirectories[$j]} is not done" | tee -a ${logJob}
       fi
-      rm -f ./postProcessing/${checkingFiles[$j]}
+      rm -f ./${checkingFiles[$j]}
    fi
 done
 #Ending Cycle for all the checked directories
