@@ -19,3 +19,9 @@ I'm deleting the file rama01.readme and using the better idea of a single readme
 committing with
 MESSAGE: Now using readme.txt
 
+
++++++++++++
+2018.01.24.
+BRANCH: master
+MESSAGE: adding the .gitignore file
+
