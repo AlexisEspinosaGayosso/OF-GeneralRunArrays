@@ -54,7 +54,9 @@ fi
 if [ "${THISHOST:0:1}" = "n" ]; then
 #   module load PrgEnv-intel
 #   module load PrgEnv-gnu
+   echo "For now, not loading modules in magnus" | tee -a ${logJob}
 elif [ "${THISHOST:0:1}" = "z" ]; then
+   echo "Loading modules for python and numpy" | tee -a ${logJob}
    module load python
    module load numpy
 fi

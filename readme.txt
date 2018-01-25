@@ -25,3 +25,9 @@ MESSAGE: Now using readme.txt
 BRANCH: master
 MESSAGE: adding the .gitignore file
 
++++++++++++
+2018.01.24.
+BRANCH: master
+The if-elif decision for modules had a syntax error. I corrected it.
+MESSAGE: Corrected error in the if-elif decision for loading modules.
+
