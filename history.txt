@@ -31,3 +31,13 @@ BRANCH: master
 The if-elif decision for modules had a syntax error. I corrected it.
 MESSAGE: Corrected error in the if-elif decision for loading modules.
 
+
++++++++++++
+2018.01.31.
+BRANCH: equalizingWithBehemoth
+MESSAGE: Equalizing scripts
+I'm trying to make the bash scripts to run also in behemoth in order to perform some postprocessing
+there.
+I now use the environment variable $MYSCRATCH and my own created $MYBASE_AEG, which together with
+$MYGROUP should help to equalize things as I wil define all these variables in behemoth too.
+

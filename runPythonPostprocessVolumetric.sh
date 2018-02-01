@@ -15,12 +15,12 @@
 
 #-----------------------------------------
 #Working Directories
-baseDir=/scratch/pawsey0106/espinosa/OpenFOAM/espinosa-$FOAMVersion/run
+baseDir=$MYSCRATCH/OpenFOAM/espinosa-$FOAMVersion/run
 #previousDir=
 #workingDir=AEG. Defined in the main calling program
 #nextDir=
-functionsD=/home/espinosa/bash_functions
-pythonDir=/home/espinosa/PythonPrograms
+functionsD=$MYBASE_AEG/bash_functions
+pythonDir=$MYBASE_AEG/PythonPrograms
 
 #-----------------------------------------
 #Log files names
