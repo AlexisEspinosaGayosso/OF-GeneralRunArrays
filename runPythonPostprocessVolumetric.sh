@@ -41,6 +41,7 @@ echo "SLURM_NTASKS_PER_NODE = $SLURM_NTASKS_PER_NODE" | tee -a ${logJob}
 #-----------------------------------------
 #Knowing the computer we are using for this script
 THISHOST=$(hostname --short)
+echo "THISHOST=${THISHOST}" | tee -a ${logJob}
 
 #-----------------------------------------
 # Unloading modules to avoid unexpected crashes
@@ -55,11 +56,17 @@ if [ "${THISHOST:0:1}" = "n" ]; then
 #   module load PrgEnv-intel
 #   module load PrgEnv-gnu
    echo "For now, not loading modules in magnus" | tee -a ${logJob}
+   piton=python
 elif [ "${THISHOST:0:1}" = "z" ]; then
    echo "Loading modules for python and numpy" | tee -a ${logJob}
    module load python
    module load numpy
+   piton=python
+elif [ "${THISHOST:0:1}" = "B" ]; then
+   echo "I'm in Behemoth, setting alias python=python3" | tee -a ${logJob}
+   piton=python3
 fi
+echo "Have defined piton=${piton}" | tee -a ${logJob}
 
 #-----------------------------------------
 #Sourcing the floating point function defininitons
@@ -233,7 +240,7 @@ if [ "${readMeans}" = "true" ]; then
          fi
          echo "Obtaining the AngularMean analysis for the available times" | tee -a ${logJob}
          tiempo0=$(($(date +%s%N)/1000000)) 
-         python $pythonDir/ArrayCapture/AngularFlux/AngularAccumulation.py $rpAnalysis $arrayDensity Mean $PWD > "${logRun}_AngularMean_${rpAnalysis}" 2>&1
+         $piton $pythonDir/ArrayCapture/AngularFlux/AngularAccumulation.py $rpAnalysis $arrayDensity Mean $PWD > "${logRun}_AngularMean_${rpAnalysis}" 2>&1
          pyResult=$?
          tiempo1=$(($(date +%s%N)/1000000))
          deltaT=$(float_eval "(${tiempo1} - ${tiempo0})/1000.0")
@@ -299,7 +306,7 @@ if [ "${readMeans}" = "true" ]; then
          echo "Obtaining the volumetricMean analysis for the available times" | tee -a ${logJob}
          tiempo0=$(($(date +%s%N)/1000000))
          date | tee -a ${logJob}
-         python $pythonDir/ArrayCapture/VolumetricFlux/TestVolumetric.py $rpAnalysis $arrayDensity Mean $PWD > "${logRun}_VolumetricMean_${rpAnalysis}" 2>&1
+         $piton $pythonDir/ArrayCapture/VolumetricFlux/TestVolumetric.py $rpAnalysis $arrayDensity Mean $PWD > "${logRun}_VolumetricMean_${rpAnalysis}" 2>&1
          pyResult=$?
          date | tee -a ${logJob}
          tiempo1=$(($(date +%s%N)/1000000))
@@ -365,7 +372,7 @@ if [ "${readMeans}" = "true" ]; then
          echo "Obtaining the CylindricalVelMean analysis for the available times" | tee -a ${logJob}
          tiempo0=$(($(date +%s%N)/1000000))
          date | tee -a ${logJob}
-         python $pythonDir/ArrayCapture/CylindricalVelocities/CylindricalVel.py $rpAnalysis $arrayDensity Mean $PWD > "${logRun}_CylindricalVelMean_${rpAnalysis}" 2>&1
+         $piton $pythonDir/ArrayCapture/CylindricalVelocities/CylindricalVel.py $rpAnalysis $arrayDensity Mean $PWD > "${logRun}_CylindricalVelMean_${rpAnalysis}" 2>&1
          pyResult=$?
          date | tee -a ${logJob}
          tiempo1=$(($(date +%s%N)/1000000))
@@ -429,7 +436,7 @@ if [ "${readInstantaneous}" = "true" ]; then
          fi
          echo "Obtaining the Angular analysis for the available times" | tee -a ${logJob}
          tiempo0=$(($(date +%s%N)/1000000)) 
-         python $pythonDir/ArrayCapture/AngularFlux/AngularAccumulation.py $rpAnalysis $arrayDensity Normal $PWD > "${logRun}_Angular_${rpAnalysis}" 2>&1
+         $piton $pythonDir/ArrayCapture/AngularFlux/AngularAccumulation.py $rpAnalysis $arrayDensity Normal $PWD > "${logRun}_Angular_${rpAnalysis}" 2>&1
          pyResult=$?
          tiempo1=$(($(date +%s%N)/1000000))
          deltaT=$(float_eval "(${tiempo1} - ${tiempo0})/1000.0")
@@ -492,7 +499,7 @@ if [ "${readInstantaneous}" = "true" ]; then
          fi
          echo "Obtaining the volumetric analysis for the available times" | tee -a ${logJob}
          tiempo0=$(($(date +%s%N)/1000000)) 
-         python $pythonDir/ArrayCapture/VolumetricFlux/TestVolumetric.py $rpAnalysis $arrayDensity Normal $PWD > "${logRun}_Volumetric_${rpAnalysis}" 2>&1
+         $piton $pythonDir/ArrayCapture/VolumetricFlux/TestVolumetric.py $rpAnalysis $arrayDensity Normal $PWD > "${logRun}_Volumetric_${rpAnalysis}" 2>&1
          pyResult=$?
          tiempo1=$(($(date +%s%N)/1000000))
          deltaT=$(float_eval "(${tiempo1} - ${tiempo0})/1000.0")
@@ -556,7 +563,7 @@ if [ "${readMeans}" = "true" ]; then
          echo "Obtaining the CylindricalVel analysis for the available times" | tee -a ${logJob}
          tiempo0=$(($(date +%s%N)/1000000))
          date | tee -a ${logJob}
-         python $pythonDir/ArrayCapture/CylindricalVelocities/CylindricalVel.py $rpAnalysis $arrayDensity Normal $PWD > "${logRun}_CylindricalVel_${rpAnalysis}" 2>&1
+         $piton $pythonDir/ArrayCapture/CylindricalVelocities/CylindricalVel.py $rpAnalysis $arrayDensity Normal $PWD > "${logRun}_CylindricalVel_${rpAnalysis}" 2>&1
          pyResult=$?
          date | tee -a ${logJob}
          tiempo1=$(($(date +%s%N)/1000000))

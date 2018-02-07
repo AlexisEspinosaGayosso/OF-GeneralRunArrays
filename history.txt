@@ -41,3 +41,10 @@ there.
 I now use the environment variable $MYSCRATCH and my own created $MYBASE_AEG, which together with
 $MYGROUP should help to equalize things as I wil define all these variables in behemoth too.
 
+
++++++++++++
+2018.01.31.
+BRANCH: equalizingWithBehemoth
+MESSAGE: Making it work in Behemoth
+Final touches needed to make things work in Behemoth. I defined a script variable for the
+name of python.
