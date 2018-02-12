@@ -36,6 +36,9 @@ dateString=$(date +%Y-%m-%d.%H.%M.%S)
 logRun="${baseDir}/${workingDir}/log_run_${SLURM_JOB_ID}_${dateString}"
 logJob="${baseDir}/${workingDir}/log_job_${SLURM_JOB_ID}_${dateString}"
 touch $logJob
+nombreHere=`basename "$0"`
+echo "Starting runSampleMeanInternal.sh ${nombreHere}" | tee -a ${logJob}
+
 
 #-------------------------------------------------------------------------
 #-------------------------------------------------------------------------
@@ -254,7 +257,7 @@ if [ "$yesReconstruct" = "true" ]; then
    if [ "${THISHOST:0:1}" = "z" ]; then
       reconstructPar -newTimes -time "${iniTime}:${endTime}" >> ${logRun} 2>&1
    elif [ "${THISHOST:0:1}" = "n" ]; then
-      aprun -n 1 reconstructPar -newTimes -time "${iniTime}:${endTime}" >> ${logRun} 2>&1
+      srun -n 1 reconstructPar -newTimes -time "${iniTime}:${endTime}" >> ${logRun} 2>&1
    fi
    echo "Finished reconstructing" | tee -a ${logJob}
    date | tee -a ${logJob}
@@ -566,7 +569,7 @@ if ! [ -f ./postProcessing/.doneMeanForces ]; then
    if [ "${THISHOST:0:1}" = "z" ]; then
       execFlowFunctionObjects -time $sampleTime >> ${logRun} 2>&1
    elif [ "${THISHOST:0:1}" = "n" ]; then
-      aprun -n 1 execFlowFunctionObjects -time $sampleTime >> ${logRun} 2>&1
+      srun -n 1 execFlowFunctionObjects -time $sampleTime >> ${logRun} 2>&1
    fi
    touch ./postProcessing/.doneMeanForces
    date | tee -a ${logJob}
@@ -663,7 +666,7 @@ if ! [ -f ./postProcessing/.doneMeanURing ]; then
    if [ "${THISHOST:0:1}" = "z" ]; then
       sample -time $sampleTime >> ${logRun} 2>&1
    elif [ "${THISHOST:0:1}" = "n" ]; then
-      aprun -n 1 sample -time $sampleTime >> ${logRun} 2>&1
+      srun -n 1 sample -time $sampleTime >> ${logRun} 2>&1
    fi
    touch ./postProcessing/.doneMeanURing
    date | tee -a ${logJob}
@@ -684,7 +687,7 @@ if ! [ -f ./postProcessing/.doneMeanPRing ]; then
    if [ "${THISHOST:0:1}" = "z" ]; then
       sample -time $sampleTime >> ${logRun} 2>&1
    elif [ "${THISHOST:0:1}" = "n" ]; then
-      aprun -n 1 sample -time $sampleTime >> ${logRun} 2>&1
+      srun -n 1 sample -time $sampleTime >> ${logRun} 2>&1
    fi
    touch ./postProcessing/.doneMeanPRing
    date | tee -a ${logJob}
@@ -705,7 +708,7 @@ if ! [ -f ./postProcessing/.doneMeanUAdditionalRing ]; then
    if [ "${THISHOST:0:1}" = "z" ]; then
       sample -time $sampleTime >> ${logRun} 2>&1
    elif [ "${THISHOST:0:1}" = "n" ]; then
-      aprun -n 1 sample -time $sampleTime >> ${logRun} 2>&1
+      srun -n 1 sample -time $sampleTime >> ${logRun} 2>&1
    fi
    touch ./postProcessing/.doneMeanUAdditionalRing
    date | tee -a ${logJob}
@@ -726,7 +729,7 @@ if ! [ -f ./postProcessing/.doneMeanPAdditionalRing ]; then
    if [ "${THISHOST:0:1}" = "z" ]; then
       sample -time $sampleTime >> ${logRun} 2>&1
    elif [ "${THISHOST:0:1}" = "n" ]; then
-      aprun -n 1 sample -time $sampleTime >> ${logRun} 2>&1
+      srun -n 1 sample -time $sampleTime >> ${logRun} 2>&1
    fi
    touch ./postProcessing/.doneMeanPAdditionalRing
    date | tee -a ${logJob}
@@ -747,7 +750,7 @@ if ! [ -f ./postProcessing/.doneMeanUPLines ]; then
    if [ "${THISHOST:0:1}" = "z" ]; then
       sample -time $sampleTime >> ${logRun} 2>&1
    elif [ "${THISHOST:0:1}" = "n" ]; then
-      aprun -n 1 sample -time $sampleTime >> ${logRun} 2>&1
+      srun -n 1 sample -time $sampleTime >> ${logRun} 2>&1
    fi
    touch ./postProcessing/.doneMeanUPLines
    date | tee -a ${logJob}

@@ -184,7 +184,7 @@ do
       if [ "${THISHOST:0:1}" = "z" ]; then
          reconstructPar -time "${jTime}" > "logR${jTime}" 2>&1
       elif [ "${THISHOST:0:1}" = "n" ]; then
-         aprun -n 1 reconstructPar -time "${jTime}" > "logR${jTime}" 2>&1
+         srun -n 1 reconstructPar -time "${jTime}" > "logR${jTime}" 2>&1
       fi
       touch "./${jTime}/.done"
       date | tee -a ${logJob}
@@ -200,7 +200,7 @@ else
    if [ "${THISHOST:0:1}" = "z" ]; then
       reconstructPar -time "${jTime}" > "logR${jTime}" 2>&1
    elif [ "${THISHOST:0:1}" = "n" ]; then
-      aprun -n 1 reconstructPar -time "${jTime}" > "logR${jTime}" 2>&1
+      srun -n 1 reconstructPar -time "${jTime}" > "logR${jTime}" 2>&1
    fi
    touch "./${jTime}/.done"
    date | tee -a ${logJob}

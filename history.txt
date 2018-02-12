@@ -48,3 +48,11 @@ BRANCH: equalizingWithBehemoth
 MESSAGE: Making it work in Behemoth
 Final touches needed to make things work in Behemoth. I defined a script variable for the
 name of python.
+
+
++++++++++++
+2018.02.12.
+BRANCH: master
+MESSAGE: sed aprun to srun
+Pawsey modified the slurm wrapper for executing scripts. So I needed to change everywhere where
+aprun was used and changed it to srun.

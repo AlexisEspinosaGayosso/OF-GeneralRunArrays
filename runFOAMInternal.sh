@@ -194,7 +194,7 @@ else
       copyFile $GeneralDir/system.FlowFields/decomposeParDict.2DChannel ./system/decomposeParDict
    fi
    sed -i "s/NSUBDOMAINS/${SLURM_NTASKS}/g" ./system/decomposeParDict
-   aprun -n 1 decomposePar -latestTime > logDecompose 2>&1
+   srun -n 1 decomposePar -latestTime > logDecompose 2>&1
 fi
 
 
@@ -248,7 +248,7 @@ if float_cond "$restartTime > 0"; then
     else
       echo "YES Reconstructing ${jTime}" | tee -a ${logJob}
       date | tee -a ${logJob}
-      aprun -n 1 reconstructPar -time "${jTime}" > "logR${jTime}" 2>&1
+      srun -n 1 reconstructPar -time "${jTime}" > "logR${jTime}" 2>&1
       touch "./${jTime}/.done"
       date | tee -a ${logJob}
     fi
@@ -382,13 +382,13 @@ fi
 # Running openFOAM
 if [ "$SLURM_NTASKS" -gt 1 ]; then
    echo "Running pimpleFoam in parallel" | tee -a ${logJob}
-   #aprun -n $SLURM_NTASKS ale_pimpleKinematicParcelFoamReboundingSF8.0_14Clouds -parallel > ${logRun} 2>&1
-   #aprun -n $SLURM_NTASKS ale_pimpleKinematicParcelFoamFreezingSF8.0_14Clouds -parallel > ${logRun} 2>&1
-   #aprun -n $SLURM_NTASKS dhcae_pimpleKinematicParcelFoam -parallel > ${logRun} 2>&1
-   aprun -n $SLURM_NTASKS pimpleFoam -parallel > ${logRun} 2>&1
+   #srun -n $SLURM_NTASKS ale_pimpleKinematicParcelFoamReboundingSF8.0_14Clouds -parallel > ${logRun} 2>&1
+   #srun -n $SLURM_NTASKS ale_pimpleKinematicParcelFoamFreezingSF8.0_14Clouds -parallel > ${logRun} 2>&1
+   #srun -n $SLURM_NTASKS dhcae_pimpleKinematicParcelFoam -parallel > ${logRun} 2>&1
+   srun -n $SLURM_NTASKS pimpleFoam -parallel > ${logRun} 2>&1
 else
    echo "Running pimpleFoam in parallel" | tee -a ${logJob}
-   aprun -n $SLURM_NTASKS pimpleFoam > ${logRun} 2>&1
+   srun -n $SLURM_NTASKS pimpleFoam > ${logRun} 2>&1
 fi
 
 
@@ -404,7 +404,7 @@ cd $baseDir/$workingDir
     else
       echo "YES Reconstructing ${jTime}" | tee -a ${logJob}
       date | tee -a ${logJob}
-      aprun -n 1 reconstructPar -time "${jTime}" > "logR${jTime}" 2>&1
+      srun -n 1 reconstructPar -time "${jTime}" > "logR${jTime}" 2>&1
       touch "./${jTime}/.done"
       date | tee -a ${logJob}
     fi
