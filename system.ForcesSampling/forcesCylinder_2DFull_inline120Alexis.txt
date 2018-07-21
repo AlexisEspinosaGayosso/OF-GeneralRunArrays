@@ -1,0 +1,1882 @@
+/**************
+//This is the file for an inline array of 120 cyliders in blocks of four
+//In block numbers the array is 10 x 3, so piece_10_3 is the maximum identification
+//Enjoy
+**************/
+
+
+	forces_cylinder_downRight_piece_1_1
+	{
+	type forces;
+	functionObjectLibs ( "libforces.so" ); // lib to load
+	outputControl timeStep;
+	outputInterval OUTPUT_INTERVAL_FORCES;
+	patches (cylinder_downRight_piece_1_1);
+	pName p;
+	UName U;
+	log true; // dump to file
+	rhoInf 1;
+	rhoName rhoInf;
+	CofR ( 0 0 0 );
+	}
+	
+	forces_cylinder_upRight_piece_1_1
+	{
+	type forces;
+	functionObjectLibs ( "libforces.so" ); // lib to load
+	outputControl timeStep;
+	outputInterval OUTPUT_INTERVAL_FORCES;
+	patches (cylinder_upRight_piece_1_1);
+	pName p;
+	UName U;
+	log true; // dump to file
+	rhoInf 1;
+	rhoName rhoInf;
+	CofR ( 0 0 0 );
+	}
+	
+	forces_cylinder_downLeft_piece_1_1
+	{
+	type forces;
+	functionObjectLibs ( "libforces.so" ); // lib to load
+	outputControl timeStep;
+	outputInterval OUTPUT_INTERVAL_FORCES;
+	patches (cylinder_downLeft_piece_1_1);
+	pName p;
+	UName U;
+	log true; // dump to file
+	rhoInf 1;
+	rhoName rhoInf;
+	CofR ( 0 0 0 );
+	}
+	
+	forces_cylinder_upLeft_piece_1_1
+	{
+	type forces;
+	functionObjectLibs ( "libforces.so" ); // lib to load
+	outputControl timeStep;
+	outputInterval OUTPUT_INTERVAL_FORCES;
+	patches (cylinder_upLeft_piece_1_1);
+	pName p;
+	UName U;
+	log true; // dump to file
+	rhoInf 1;
+	rhoName rhoInf;
+	CofR ( 0 0 0 );
+	}
+
+//--------------------------
+	forces_cylinder_downRight_piece_1_2
+	{
+	type forces;
+	functionObjectLibs ( "libforces.so" ); // lib to load
+	outputControl timeStep;
+	outputInterval OUTPUT_INTERVAL_FORCES;
+	patches (cylinder_downRight_piece_1_2);
+	pName p;
+	UName U;
+	log true; // dump to file
+	rhoInf 1;
+	rhoName rhoInf;
+	CofR ( 0 0 0 );
+	}
+	
+	forces_cylinder_upRight_piece_1_2
+	{
+	type forces;
+	functionObjectLibs ( "libforces.so" ); // lib to load
+	outputControl timeStep;
+	outputInterval OUTPUT_INTERVAL_FORCES;
+	patches (cylinder_upRight_piece_1_2);
+	pName p;
+	UName U;
+	log true; // dump to file
+	rhoInf 1;
+	rhoName rhoInf;
+	CofR ( 0 0 0 );
+	}
+	
+	forces_cylinder_downLeft_piece_1_2
+	{
+	type forces;
+	functionObjectLibs ( "libforces.so" ); // lib to load
+	outputControl timeStep;
+	outputInterval OUTPUT_INTERVAL_FORCES;
+	patches (cylinder_downLeft_piece_1_2);
+	pName p;
+	UName U;
+	log true; // dump to file
+	rhoInf 1;
+	rhoName rhoInf;
+	CofR ( 0 0 0 );
+	}
+	
+	forces_cylinder_upLeft_piece_1_2
+	{
+	type forces;
+	functionObjectLibs ( "libforces.so" ); // lib to load
+	outputControl timeStep;
+	outputInterval OUTPUT_INTERVAL_FORCES;
+	patches (cylinder_upLeft_piece_1_2);
+	pName p;
+	UName U;
+	log true; // dump to file
+	rhoInf 1;
+	rhoName rhoInf;
+	CofR ( 0 0 0 );
+	}
+
+//--------------------------
+
+	forces_cylinder_downRight_piece_1_3
+	{
+	type forces;
+	functionObjectLibs ( "libforces.so" ); // lib to load
+	outputControl timeStep;
+	outputInterval OUTPUT_INTERVAL_FORCES;
+	patches (cylinder_downRight_piece_1_3);
+	pName p;
+	UName U;
+	log true; // dump to file
+	rhoInf 1;
+	rhoName rhoInf;
+	CofR ( 0 0 0 );
+	}
+	
+	forces_cylinder_upRight_piece_1_3
+	{
+	type forces;
+	functionObjectLibs ( "libforces.so" ); // lib to load
+	outputControl timeStep;
+	outputInterval OUTPUT_INTERVAL_FORCES;
+	patches (cylinder_upRight_piece_1_3);
+	pName p;
+	UName U;
+	log true; // dump to file
+	rhoInf 1;
+	rhoName rhoInf;
+	CofR ( 0 0 0 );
+	}
+	
+	forces_cylinder_downLeft_piece_1_3
+	{
+	type forces;
+	functionObjectLibs ( "libforces.so" ); // lib to load
+	outputControl timeStep;
+	outputInterval OUTPUT_INTERVAL_FORCES;
+	patches (cylinder_downLeft_piece_1_3);
+	pName p;
+	UName U;
+	log true; // dump to file
+	rhoInf 1;
+	rhoName rhoInf;
+	CofR ( 0 0 0 );
+	}
+	
+	forces_cylinder_upLeft_piece_1_3
+	{
+	type forces;
+	functionObjectLibs ( "libforces.so" ); // lib to load
+	outputControl timeStep;
+	outputInterval OUTPUT_INTERVAL_FORCES;
+	patches (cylinder_upLeft_piece_1_3);
+	pName p;
+	UName U;
+	log true; // dump to file
+	rhoInf 1;
+	rhoName rhoInf;
+	CofR ( 0 0 0 );
+	}
+
+
+//--------------------------
+//##########################
+// +++++++++++++++++++++++
+// -----------------------
+	forces_cylinder_downRight_piece_2_1
+	{
+	type forces;
+	functionObjectLibs ( "libforces.so" ); // lib to load
+	outputControl timeStep;
+	outputInterval OUTPUT_INTERVAL_FORCES;
+	patches (cylinder_downRight_piece_2_1);
+	pName p;
+	UName U;
+	log true; // dump to file
+	rhoInf 1;
+	rhoName rhoInf;
+	CofR ( 0 0 0 );
+	}
+	
+	forces_cylinder_upRight_piece_2_1
+	{
+	type forces;
+	functionObjectLibs ( "libforces.so" ); // lib to load
+	outputControl timeStep;
+	outputInterval OUTPUT_INTERVAL_FORCES;
+	patches (cylinder_upRight_piece_2_1);
+	pName p;
+	UName U;
+	log true; // dump to file
+	rhoInf 1;
+	rhoName rhoInf;
+	CofR ( 0 0 0 );
+	}
+	
+	forces_cylinder_downLeft_piece_2_1
+	{
+	type forces;
+	functionObjectLibs ( "libforces.so" ); // lib to load
+	outputControl timeStep;
+	outputInterval OUTPUT_INTERVAL_FORCES;
+	patches (cylinder_downLeft_piece_2_1);
+	pName p;
+	UName U;
+	log true; // dump to file
+	rhoInf 1;
+	rhoName rhoInf;
+	CofR ( 0 0 0 );
+	}
+	
+	forces_cylinder_upLeft_piece_2_1
+	{
+	type forces;
+	functionObjectLibs ( "libforces.so" ); // lib to load
+	outputControl timeStep;
+	outputInterval OUTPUT_INTERVAL_FORCES;
+	patches (cylinder_upLeft_piece_2_1);
+	pName p;
+	UName U;
+	log true; // dump to file
+	rhoInf 1;
+	rhoName rhoInf;
+	CofR ( 0 0 0 );
+	}
+
+//--------------------------
+	forces_cylinder_downRight_piece_2_2
+	{
+	type forces;
+	functionObjectLibs ( "libforces.so" ); // lib to load
+	outputControl timeStep;
+	outputInterval OUTPUT_INTERVAL_FORCES;
+	patches (cylinder_downRight_piece_2_2);
+	pName p;
+	UName U;
+	log true; // dump to file
+	rhoInf 1;
+	rhoName rhoInf;
+	CofR ( 0 0 0 );
+	}
+	
+	forces_cylinder_upRight_piece_2_2
+	{
+	type forces;
+	functionObjectLibs ( "libforces.so" ); // lib to load
+	outputControl timeStep;
+	outputInterval OUTPUT_INTERVAL_FORCES;
+	patches (cylinder_upRight_piece_2_2);
+	pName p;
+	UName U;
+	log true; // dump to file
+	rhoInf 1;
+	rhoName rhoInf;
+	CofR ( 0 0 0 );
+	}
+	
+	forces_cylinder_downLeft_piece_2_2
+	{
+	type forces;
+	functionObjectLibs ( "libforces.so" ); // lib to load
+	outputControl timeStep;
+	outputInterval OUTPUT_INTERVAL_FORCES;
+	patches (cylinder_downLeft_piece_2_2);
+	pName p;
+	UName U;
+	log true; // dump to file
+	rhoInf 1;
+	rhoName rhoInf;
+	CofR ( 0 0 0 );
+	}
+	
+	forces_cylinder_upLeft_piece_2_2
+	{
+	type forces;
+	functionObjectLibs ( "libforces.so" ); // lib to load
+	outputControl timeStep;
+	outputInterval OUTPUT_INTERVAL_FORCES;
+	patches (cylinder_upLeft_piece_2_2);
+	pName p;
+	UName U;
+	log true; // dump to file
+	rhoInf 1;
+	rhoName rhoInf;
+	CofR ( 0 0 0 );
+	}
+
+//--------------------------
+
+	forces_cylinder_downRight_piece_2_3
+	{
+	type forces;
+	functionObjectLibs ( "libforces.so" ); // lib to load
+	outputControl timeStep;
+	outputInterval OUTPUT_INTERVAL_FORCES;
+	patches (cylinder_downRight_piece_2_3);
+	pName p;
+	UName U;
+	log true; // dump to file
+	rhoInf 1;
+	rhoName rhoInf;
+	CofR ( 0 0 0 );
+	}
+	
+	forces_cylinder_upRight_piece_2_3
+	{
+	type forces;
+	functionObjectLibs ( "libforces.so" ); // lib to load
+	outputControl timeStep;
+	outputInterval OUTPUT_INTERVAL_FORCES;
+	patches (cylinder_upRight_piece_2_3);
+	pName p;
+	UName U;
+	log true; // dump to file
+	rhoInf 1;
+	rhoName rhoInf;
+	CofR ( 0 0 0 );
+	}
+	
+	forces_cylinder_downLeft_piece_2_3
+	{
+	type forces;
+	functionObjectLibs ( "libforces.so" ); // lib to load
+	outputControl timeStep;
+	outputInterval OUTPUT_INTERVAL_FORCES;
+	patches (cylinder_downLeft_piece_2_3);
+	pName p;
+	UName U;
+	log true; // dump to file
+	rhoInf 1;
+	rhoName rhoInf;
+	CofR ( 0 0 0 );
+	}
+	
+	forces_cylinder_upLeft_piece_2_3
+	{
+	type forces;
+	functionObjectLibs ( "libforces.so" ); // lib to load
+	outputControl timeStep;
+	outputInterval OUTPUT_INTERVAL_FORCES;
+	patches (cylinder_upLeft_piece_2_3);
+	pName p;
+	UName U;
+	log true; // dump to file
+	rhoInf 1;
+	rhoName rhoInf;
+	CofR ( 0 0 0 );
+	}
+
+
+//--------------------------
+//##########################
+// +++++++++++++++++++++++
+// -----------------------
+	forces_cylinder_downRight_piece_3_1
+	{
+	type forces;
+	functionObjectLibs ( "libforces.so" ); // lib to load
+	outputControl timeStep;
+	outputInterval OUTPUT_INTERVAL_FORCES;
+	patches (cylinder_downRight_piece_3_1);
+	pName p;
+	UName U;
+	log true; // dump to file
+	rhoInf 1;
+	rhoName rhoInf;
+	CofR ( 0 0 0 );
+	}
+	
+	forces_cylinder_upRight_piece_3_1
+	{
+	type forces;
+	functionObjectLibs ( "libforces.so" ); // lib to load
+	outputControl timeStep;
+	outputInterval OUTPUT_INTERVAL_FORCES;
+	patches (cylinder_upRight_piece_3_1);
+	pName p;
+	UName U;
+	log true; // dump to file
+	rhoInf 1;
+	rhoName rhoInf;
+	CofR ( 0 0 0 );
+	}
+	
+	forces_cylinder_downLeft_piece_3_1
+	{
+	type forces;
+	functionObjectLibs ( "libforces.so" ); // lib to load
+	outputControl timeStep;
+	outputInterval OUTPUT_INTERVAL_FORCES;
+	patches (cylinder_downLeft_piece_3_1);
+	pName p;
+	UName U;
+	log true; // dump to file
+	rhoInf 1;
+	rhoName rhoInf;
+	CofR ( 0 0 0 );
+	}
+	
+	forces_cylinder_upLeft_piece_3_1
+	{
+	type forces;
+	functionObjectLibs ( "libforces.so" ); // lib to load
+	outputControl timeStep;
+	outputInterval OUTPUT_INTERVAL_FORCES;
+	patches (cylinder_upLeft_piece_3_1);
+	pName p;
+	UName U;
+	log true; // dump to file
+	rhoInf 1;
+	rhoName rhoInf;
+	CofR ( 0 0 0 );
+	}
+
+//--------------------------
+	forces_cylinder_downRight_piece_3_2
+	{
+	type forces;
+	functionObjectLibs ( "libforces.so" ); // lib to load
+	outputControl timeStep;
+	outputInterval OUTPUT_INTERVAL_FORCES;
+	patches (cylinder_downRight_piece_3_2);
+	pName p;
+	UName U;
+	log true; // dump to file
+	rhoInf 1;
+	rhoName rhoInf;
+	CofR ( 0 0 0 );
+	}
+	
+	forces_cylinder_upRight_piece_3_2
+	{
+	type forces;
+	functionObjectLibs ( "libforces.so" ); // lib to load
+	outputControl timeStep;
+	outputInterval OUTPUT_INTERVAL_FORCES;
+	patches (cylinder_upRight_piece_3_2);
+	pName p;
+	UName U;
+	log true; // dump to file
+	rhoInf 1;
+	rhoName rhoInf;
+	CofR ( 0 0 0 );
+	}
+	
+	forces_cylinder_downLeft_piece_3_2
+	{
+	type forces;
+	functionObjectLibs ( "libforces.so" ); // lib to load
+	outputControl timeStep;
+	outputInterval OUTPUT_INTERVAL_FORCES;
+	patches (cylinder_downLeft_piece_3_2);
+	pName p;
+	UName U;
+	log true; // dump to file
+	rhoInf 1;
+	rhoName rhoInf;
+	CofR ( 0 0 0 );
+	}
+	
+	forces_cylinder_upLeft_piece_3_2
+	{
+	type forces;
+	functionObjectLibs ( "libforces.so" ); // lib to load
+	outputControl timeStep;
+	outputInterval OUTPUT_INTERVAL_FORCES;
+	patches (cylinder_upLeft_piece_3_2);
+	pName p;
+	UName U;
+	log true; // dump to file
+	rhoInf 1;
+	rhoName rhoInf;
+	CofR ( 0 0 0 );
+	}
+
+//--------------------------
+
+	forces_cylinder_downRight_piece_3_3
+	{
+	type forces;
+	functionObjectLibs ( "libforces.so" ); // lib to load
+	outputControl timeStep;
+	outputInterval OUTPUT_INTERVAL_FORCES;
+	patches (cylinder_downRight_piece_3_3);
+	pName p;
+	UName U;
+	log true; // dump to file
+	rhoInf 1;
+	rhoName rhoInf;
+	CofR ( 0 0 0 );
+	}
+	
+	forces_cylinder_upRight_piece_3_3
+	{
+	type forces;
+	functionObjectLibs ( "libforces.so" ); // lib to load
+	outputControl timeStep;
+	outputInterval OUTPUT_INTERVAL_FORCES;
+	patches (cylinder_upRight_piece_3_3);
+	pName p;
+	UName U;
+	log true; // dump to file
+	rhoInf 1;
+	rhoName rhoInf;
+	CofR ( 0 0 0 );
+	}
+	
+	forces_cylinder_downLeft_piece_3_3
+	{
+	type forces;
+	functionObjectLibs ( "libforces.so" ); // lib to load
+	outputControl timeStep;
+	outputInterval OUTPUT_INTERVAL_FORCES;
+	patches (cylinder_downLeft_piece_3_3);
+	pName p;
+	UName U;
+	log true; // dump to file
+	rhoInf 1;
+	rhoName rhoInf;
+	CofR ( 0 0 0 );
+	}
+	
+	forces_cylinder_upLeft_piece_3_3
+	{
+	type forces;
+	functionObjectLibs ( "libforces.so" ); // lib to load
+	outputControl timeStep;
+	outputInterval OUTPUT_INTERVAL_FORCES;
+	patches (cylinder_upLeft_piece_3_3);
+	pName p;
+	UName U;
+	log true; // dump to file
+	rhoInf 1;
+	rhoName rhoInf;
+	CofR ( 0 0 0 );
+	}
+
+
+//--------------------------
+//##########################
+// +++++++++++++++++++++++
+// -----------------------
+	forces_cylinder_downRight_piece_4_1
+	{
+	type forces;
+	functionObjectLibs ( "libforces.so" ); // lib to load
+	outputControl timeStep;
+	outputInterval OUTPUT_INTERVAL_FORCES;
+	patches (cylinder_downRight_piece_4_1);
+	pName p;
+	UName U;
+	log true; // dump to file
+	rhoInf 1;
+	rhoName rhoInf;
+	CofR ( 0 0 0 );
+	}
+	
+	forces_cylinder_upRight_piece_4_1
+	{
+	type forces;
+	functionObjectLibs ( "libforces.so" ); // lib to load
+	outputControl timeStep;
+	outputInterval OUTPUT_INTERVAL_FORCES;
+	patches (cylinder_upRight_piece_4_1);
+	pName p;
+	UName U;
+	log true; // dump to file
+	rhoInf 1;
+	rhoName rhoInf;
+	CofR ( 0 0 0 );
+	}
+	
+	forces_cylinder_downLeft_piece_4_1
+	{
+	type forces;
+	functionObjectLibs ( "libforces.so" ); // lib to load
+	outputControl timeStep;
+	outputInterval OUTPUT_INTERVAL_FORCES;
+	patches (cylinder_downLeft_piece_4_1);
+	pName p;
+	UName U;
+	log true; // dump to file
+	rhoInf 1;
+	rhoName rhoInf;
+	CofR ( 0 0 0 );
+	}
+	
+	forces_cylinder_upLeft_piece_4_1
+	{
+	type forces;
+	functionObjectLibs ( "libforces.so" ); // lib to load
+	outputControl timeStep;
+	outputInterval OUTPUT_INTERVAL_FORCES;
+	patches (cylinder_upLeft_piece_4_1);
+	pName p;
+	UName U;
+	log true; // dump to file
+	rhoInf 1;
+	rhoName rhoInf;
+	CofR ( 0 0 0 );
+	}
+
+//--------------------------
+	forces_cylinder_downRight_piece_4_2
+	{
+	type forces;
+	functionObjectLibs ( "libforces.so" ); // lib to load
+	outputControl timeStep;
+	outputInterval OUTPUT_INTERVAL_FORCES;
+	patches (cylinder_downRight_piece_4_2);
+	pName p;
+	UName U;
+	log true; // dump to file
+	rhoInf 1;
+	rhoName rhoInf;
+	CofR ( 0 0 0 );
+	}
+	
+	forces_cylinder_upRight_piece_4_2
+	{
+	type forces;
+	functionObjectLibs ( "libforces.so" ); // lib to load
+	outputControl timeStep;
+	outputInterval OUTPUT_INTERVAL_FORCES;
+	patches (cylinder_upRight_piece_4_2);
+	pName p;
+	UName U;
+	log true; // dump to file
+	rhoInf 1;
+	rhoName rhoInf;
+	CofR ( 0 0 0 );
+	}
+	
+	forces_cylinder_downLeft_piece_4_2
+	{
+	type forces;
+	functionObjectLibs ( "libforces.so" ); // lib to load
+	outputControl timeStep;
+	outputInterval OUTPUT_INTERVAL_FORCES;
+	patches (cylinder_downLeft_piece_4_2);
+	pName p;
+	UName U;
+	log true; // dump to file
+	rhoInf 1;
+	rhoName rhoInf;
+	CofR ( 0 0 0 );
+	}
+	
+	forces_cylinder_upLeft_piece_4_2
+	{
+	type forces;
+	functionObjectLibs ( "libforces.so" ); // lib to load
+	outputControl timeStep;
+	outputInterval OUTPUT_INTERVAL_FORCES;
+	patches (cylinder_upLeft_piece_4_2);
+	pName p;
+	UName U;
+	log true; // dump to file
+	rhoInf 1;
+	rhoName rhoInf;
+	CofR ( 0 0 0 );
+	}
+
+//--------------------------
+
+	forces_cylinder_downRight_piece_4_3
+	{
+	type forces;
+	functionObjectLibs ( "libforces.so" ); // lib to load
+	outputControl timeStep;
+	outputInterval OUTPUT_INTERVAL_FORCES;
+	patches (cylinder_downRight_piece_4_3);
+	pName p;
+	UName U;
+	log true; // dump to file
+	rhoInf 1;
+	rhoName rhoInf;
+	CofR ( 0 0 0 );
+	}
+	
+	forces_cylinder_upRight_piece_4_3
+	{
+	type forces;
+	functionObjectLibs ( "libforces.so" ); // lib to load
+	outputControl timeStep;
+	outputInterval OUTPUT_INTERVAL_FORCES;
+	patches (cylinder_upRight_piece_4_3);
+	pName p;
+	UName U;
+	log true; // dump to file
+	rhoInf 1;
+	rhoName rhoInf;
+	CofR ( 0 0 0 );
+	}
+	
+	forces_cylinder_downLeft_piece_4_3
+	{
+	type forces;
+	functionObjectLibs ( "libforces.so" ); // lib to load
+	outputControl timeStep;
+	outputInterval OUTPUT_INTERVAL_FORCES;
+	patches (cylinder_downLeft_piece_4_3);
+	pName p;
+	UName U;
+	log true; // dump to file
+	rhoInf 1;
+	rhoName rhoInf;
+	CofR ( 0 0 0 );
+	}
+	
+	forces_cylinder_upLeft_piece_4_3
+	{
+	type forces;
+	functionObjectLibs ( "libforces.so" ); // lib to load
+	outputControl timeStep;
+	outputInterval OUTPUT_INTERVAL_FORCES;
+	patches (cylinder_upLeft_piece_4_3);
+	pName p;
+	UName U;
+	log true; // dump to file
+	rhoInf 1;
+	rhoName rhoInf;
+	CofR ( 0 0 0 );
+	}
+
+
+//--------------------------
+//##########################
+// +++++++++++++++++++++++
+// -----------------------
+	forces_cylinder_downRight_piece_5_1
+	{
+	type forces;
+	functionObjectLibs ( "libforces.so" ); // lib to load
+	outputControl timeStep;
+	outputInterval OUTPUT_INTERVAL_FORCES;
+	patches (cylinder_downRight_piece_5_1);
+	pName p;
+	UName U;
+	log true; // dump to file
+	rhoInf 1;
+	rhoName rhoInf;
+	CofR ( 0 0 0 );
+	}
+	
+	forces_cylinder_upRight_piece_5_1
+	{
+	type forces;
+	functionObjectLibs ( "libforces.so" ); // lib to load
+	outputControl timeStep;
+	outputInterval OUTPUT_INTERVAL_FORCES;
+	patches (cylinder_upRight_piece_5_1);
+	pName p;
+	UName U;
+	log true; // dump to file
+	rhoInf 1;
+	rhoName rhoInf;
+	CofR ( 0 0 0 );
+	}
+	
+	forces_cylinder_downLeft_piece_5_1
+	{
+	type forces;
+	functionObjectLibs ( "libforces.so" ); // lib to load
+	outputControl timeStep;
+	outputInterval OUTPUT_INTERVAL_FORCES;
+	patches (cylinder_downLeft_piece_5_1);
+	pName p;
+	UName U;
+	log true; // dump to file
+	rhoInf 1;
+	rhoName rhoInf;
+	CofR ( 0 0 0 );
+	}
+	
+	forces_cylinder_upLeft_piece_5_1
+	{
+	type forces;
+	functionObjectLibs ( "libforces.so" ); // lib to load
+	outputControl timeStep;
+	outputInterval OUTPUT_INTERVAL_FORCES;
+	patches (cylinder_upLeft_piece_5_1);
+	pName p;
+	UName U;
+	log true; // dump to file
+	rhoInf 1;
+	rhoName rhoInf;
+	CofR ( 0 0 0 );
+	}
+
+//--------------------------
+	forces_cylinder_downRight_piece_5_2
+	{
+	type forces;
+	functionObjectLibs ( "libforces.so" ); // lib to load
+	outputControl timeStep;
+	outputInterval OUTPUT_INTERVAL_FORCES;
+	patches (cylinder_downRight_piece_5_2);
+	pName p;
+	UName U;
+	log true; // dump to file
+	rhoInf 1;
+	rhoName rhoInf;
+	CofR ( 0 0 0 );
+	}
+	
+	forces_cylinder_upRight_piece_5_2
+	{
+	type forces;
+	functionObjectLibs ( "libforces.so" ); // lib to load
+	outputControl timeStep;
+	outputInterval OUTPUT_INTERVAL_FORCES;
+	patches (cylinder_upRight_piece_5_2);
+	pName p;
+	UName U;
+	log true; // dump to file
+	rhoInf 1;
+	rhoName rhoInf;
+	CofR ( 0 0 0 );
+	}
+	
+	forces_cylinder_downLeft_piece_5_2
+	{
+	type forces;
+	functionObjectLibs ( "libforces.so" ); // lib to load
+	outputControl timeStep;
+	outputInterval OUTPUT_INTERVAL_FORCES;
+	patches (cylinder_downLeft_piece_5_2);
+	pName p;
+	UName U;
+	log true; // dump to file
+	rhoInf 1;
+	rhoName rhoInf;
+	CofR ( 0 0 0 );
+	}
+	
+	forces_cylinder_upLeft_piece_5_2
+	{
+	type forces;
+	functionObjectLibs ( "libforces.so" ); // lib to load
+	outputControl timeStep;
+	outputInterval OUTPUT_INTERVAL_FORCES;
+	patches (cylinder_upLeft_piece_5_2);
+	pName p;
+	UName U;
+	log true; // dump to file
+	rhoInf 1;
+	rhoName rhoInf;
+	CofR ( 0 0 0 );
+	}
+
+//--------------------------
+
+	forces_cylinder_downRight_piece_5_3
+	{
+	type forces;
+	functionObjectLibs ( "libforces.so" ); // lib to load
+	outputControl timeStep;
+	outputInterval OUTPUT_INTERVAL_FORCES;
+	patches (cylinder_downRight_piece_5_3);
+	pName p;
+	UName U;
+	log true; // dump to file
+	rhoInf 1;
+	rhoName rhoInf;
+	CofR ( 0 0 0 );
+	}
+	
+	forces_cylinder_upRight_piece_5_3
+	{
+	type forces;
+	functionObjectLibs ( "libforces.so" ); // lib to load
+	outputControl timeStep;
+	outputInterval OUTPUT_INTERVAL_FORCES;
+	patches (cylinder_upRight_piece_5_3);
+	pName p;
+	UName U;
+	log true; // dump to file
+	rhoInf 1;
+	rhoName rhoInf;
+	CofR ( 0 0 0 );
+	}
+	
+	forces_cylinder_downLeft_piece_5_3
+	{
+	type forces;
+	functionObjectLibs ( "libforces.so" ); // lib to load
+	outputControl timeStep;
+	outputInterval OUTPUT_INTERVAL_FORCES;
+	patches (cylinder_downLeft_piece_5_3);
+	pName p;
+	UName U;
+	log true; // dump to file
+	rhoInf 1;
+	rhoName rhoInf;
+	CofR ( 0 0 0 );
+	}
+	
+	forces_cylinder_upLeft_piece_5_3
+	{
+	type forces;
+	functionObjectLibs ( "libforces.so" ); // lib to load
+	outputControl timeStep;
+	outputInterval OUTPUT_INTERVAL_FORCES;
+	patches (cylinder_upLeft_piece_5_3);
+	pName p;
+	UName U;
+	log true; // dump to file
+	rhoInf 1;
+	rhoName rhoInf;
+	CofR ( 0 0 0 );
+	}
+
+
+//--------------------------
+//##########################
+// +++++++++++++++++++++++
+// -----------------------
+	forces_cylinder_downRight_piece_6_1
+	{
+	type forces;
+	functionObjectLibs ( "libforces.so" ); // lib to load
+	outputControl timeStep;
+	outputInterval OUTPUT_INTERVAL_FORCES;
+	patches (cylinder_downRight_piece_6_1);
+	pName p;
+	UName U;
+	log true; // dump to file
+	rhoInf 1;
+	rhoName rhoInf;
+	CofR ( 0 0 0 );
+	}
+	
+	forces_cylinder_upRight_piece_6_1
+	{
+	type forces;
+	functionObjectLibs ( "libforces.so" ); // lib to load
+	outputControl timeStep;
+	outputInterval OUTPUT_INTERVAL_FORCES;
+	patches (cylinder_upRight_piece_6_1);
+	pName p;
+	UName U;
+	log true; // dump to file
+	rhoInf 1;
+	rhoName rhoInf;
+	CofR ( 0 0 0 );
+	}
+	
+	forces_cylinder_downLeft_piece_6_1
+	{
+	type forces;
+	functionObjectLibs ( "libforces.so" ); // lib to load
+	outputControl timeStep;
+	outputInterval OUTPUT_INTERVAL_FORCES;
+	patches (cylinder_downLeft_piece_6_1);
+	pName p;
+	UName U;
+	log true; // dump to file
+	rhoInf 1;
+	rhoName rhoInf;
+	CofR ( 0 0 0 );
+	}
+	
+	forces_cylinder_upLeft_piece_6_1
+	{
+	type forces;
+	functionObjectLibs ( "libforces.so" ); // lib to load
+	outputControl timeStep;
+	outputInterval OUTPUT_INTERVAL_FORCES;
+	patches (cylinder_upLeft_piece_6_1);
+	pName p;
+	UName U;
+	log true; // dump to file
+	rhoInf 1;
+	rhoName rhoInf;
+	CofR ( 0 0 0 );
+	}
+
+//--------------------------
+	forces_cylinder_downRight_piece_6_2
+	{
+	type forces;
+	functionObjectLibs ( "libforces.so" ); // lib to load
+	outputControl timeStep;
+	outputInterval OUTPUT_INTERVAL_FORCES;
+	patches (cylinder_downRight_piece_6_2);
+	pName p;
+	UName U;
+	log true; // dump to file
+	rhoInf 1;
+	rhoName rhoInf;
+	CofR ( 0 0 0 );
+	}
+	
+	forces_cylinder_upRight_piece_6_2
+	{
+	type forces;
+	functionObjectLibs ( "libforces.so" ); // lib to load
+	outputControl timeStep;
+	outputInterval OUTPUT_INTERVAL_FORCES;
+	patches (cylinder_upRight_piece_6_2);
+	pName p;
+	UName U;
+	log true; // dump to file
+	rhoInf 1;
+	rhoName rhoInf;
+	CofR ( 0 0 0 );
+	}
+	
+	forces_cylinder_downLeft_piece_6_2
+	{
+	type forces;
+	functionObjectLibs ( "libforces.so" ); // lib to load
+	outputControl timeStep;
+	outputInterval OUTPUT_INTERVAL_FORCES;
+	patches (cylinder_downLeft_piece_6_2);
+	pName p;
+	UName U;
+	log true; // dump to file
+	rhoInf 1;
+	rhoName rhoInf;
+	CofR ( 0 0 0 );
+	}
+	
+	forces_cylinder_upLeft_piece_6_2
+	{
+	type forces;
+	functionObjectLibs ( "libforces.so" ); // lib to load
+	outputControl timeStep;
+	outputInterval OUTPUT_INTERVAL_FORCES;
+	patches (cylinder_upLeft_piece_6_2);
+	pName p;
+	UName U;
+	log true; // dump to file
+	rhoInf 1;
+	rhoName rhoInf;
+	CofR ( 0 0 0 );
+	}
+
+//--------------------------
+
+	forces_cylinder_downRight_piece_6_3
+	{
+	type forces;
+	functionObjectLibs ( "libforces.so" ); // lib to load
+	outputControl timeStep;
+	outputInterval OUTPUT_INTERVAL_FORCES;
+	patches (cylinder_downRight_piece_6_3);
+	pName p;
+	UName U;
+	log true; // dump to file
+	rhoInf 1;
+	rhoName rhoInf;
+	CofR ( 0 0 0 );
+	}
+	
+	forces_cylinder_upRight_piece_6_3
+	{
+	type forces;
+	functionObjectLibs ( "libforces.so" ); // lib to load
+	outputControl timeStep;
+	outputInterval OUTPUT_INTERVAL_FORCES;
+	patches (cylinder_upRight_piece_6_3);
+	pName p;
+	UName U;
+	log true; // dump to file
+	rhoInf 1;
+	rhoName rhoInf;
+	CofR ( 0 0 0 );
+	}
+	
+	forces_cylinder_downLeft_piece_6_3
+	{
+	type forces;
+	functionObjectLibs ( "libforces.so" ); // lib to load
+	outputControl timeStep;
+	outputInterval OUTPUT_INTERVAL_FORCES;
+	patches (cylinder_downLeft_piece_6_3);
+	pName p;
+	UName U;
+	log true; // dump to file
+	rhoInf 1;
+	rhoName rhoInf;
+	CofR ( 0 0 0 );
+	}
+	
+	forces_cylinder_upLeft_piece_6_3
+	{
+	type forces;
+	functionObjectLibs ( "libforces.so" ); // lib to load
+	outputControl timeStep;
+	outputInterval OUTPUT_INTERVAL_FORCES;
+	patches (cylinder_upLeft_piece_6_3);
+	pName p;
+	UName U;
+	log true; // dump to file
+	rhoInf 1;
+	rhoName rhoInf;
+	CofR ( 0 0 0 );
+	}
+
+
+//--------------------------
+//##########################
+// +++++++++++++++++++++++
+// -----------------------
+	forces_cylinder_downRight_piece_7_1
+	{
+	type forces;
+	functionObjectLibs ( "libforces.so" ); // lib to load
+	outputControl timeStep;
+	outputInterval OUTPUT_INTERVAL_FORCES;
+	patches (cylinder_downRight_piece_7_1);
+	pName p;
+	UName U;
+	log true; // dump to file
+	rhoInf 1;
+	rhoName rhoInf;
+	CofR ( 0 0 0 );
+	}
+	
+	forces_cylinder_upRight_piece_7_1
+	{
+	type forces;
+	functionObjectLibs ( "libforces.so" ); // lib to load
+	outputControl timeStep;
+	outputInterval OUTPUT_INTERVAL_FORCES;
+	patches (cylinder_upRight_piece_7_1);
+	pName p;
+	UName U;
+	log true; // dump to file
+	rhoInf 1;
+	rhoName rhoInf;
+	CofR ( 0 0 0 );
+	}
+	
+	forces_cylinder_downLeft_piece_7_1
+	{
+	type forces;
+	functionObjectLibs ( "libforces.so" ); // lib to load
+	outputControl timeStep;
+	outputInterval OUTPUT_INTERVAL_FORCES;
+	patches (cylinder_downLeft_piece_7_1);
+	pName p;
+	UName U;
+	log true; // dump to file
+	rhoInf 1;
+	rhoName rhoInf;
+	CofR ( 0 0 0 );
+	}
+	
+	forces_cylinder_upLeft_piece_7_1
+	{
+	type forces;
+	functionObjectLibs ( "libforces.so" ); // lib to load
+	outputControl timeStep;
+	outputInterval OUTPUT_INTERVAL_FORCES;
+	patches (cylinder_upLeft_piece_7_1);
+	pName p;
+	UName U;
+	log true; // dump to file
+	rhoInf 1;
+	rhoName rhoInf;
+	CofR ( 0 0 0 );
+	}
+
+//--------------------------
+	forces_cylinder_downRight_piece_7_2
+	{
+	type forces;
+	functionObjectLibs ( "libforces.so" ); // lib to load
+	outputControl timeStep;
+	outputInterval OUTPUT_INTERVAL_FORCES;
+	patches (cylinder_downRight_piece_7_2);
+	pName p;
+	UName U;
+	log true; // dump to file
+	rhoInf 1;
+	rhoName rhoInf;
+	CofR ( 0 0 0 );
+	}
+	
+	forces_cylinder_upRight_piece_7_2
+	{
+	type forces;
+	functionObjectLibs ( "libforces.so" ); // lib to load
+	outputControl timeStep;
+	outputInterval OUTPUT_INTERVAL_FORCES;
+	patches (cylinder_upRight_piece_7_2);
+	pName p;
+	UName U;
+	log true; // dump to file
+	rhoInf 1;
+	rhoName rhoInf;
+	CofR ( 0 0 0 );
+	}
+	
+	forces_cylinder_downLeft_piece_7_2
+	{
+	type forces;
+	functionObjectLibs ( "libforces.so" ); // lib to load
+	outputControl timeStep;
+	outputInterval OUTPUT_INTERVAL_FORCES;
+	patches (cylinder_downLeft_piece_7_2);
+	pName p;
+	UName U;
+	log true; // dump to file
+	rhoInf 1;
+	rhoName rhoInf;
+	CofR ( 0 0 0 );
+	}
+	
+	forces_cylinder_upLeft_piece_7_2
+	{
+	type forces;
+	functionObjectLibs ( "libforces.so" ); // lib to load
+	outputControl timeStep;
+	outputInterval OUTPUT_INTERVAL_FORCES;
+	patches (cylinder_upLeft_piece_7_2);
+	pName p;
+	UName U;
+	log true; // dump to file
+	rhoInf 1;
+	rhoName rhoInf;
+	CofR ( 0 0 0 );
+	}
+
+//--------------------------
+
+	forces_cylinder_downRight_piece_7_3
+	{
+	type forces;
+	functionObjectLibs ( "libforces.so" ); // lib to load
+	outputControl timeStep;
+	outputInterval OUTPUT_INTERVAL_FORCES;
+	patches (cylinder_downRight_piece_7_3);
+	pName p;
+	UName U;
+	log true; // dump to file
+	rhoInf 1;
+	rhoName rhoInf;
+	CofR ( 0 0 0 );
+	}
+	
+	forces_cylinder_upRight_piece_7_3
+	{
+	type forces;
+	functionObjectLibs ( "libforces.so" ); // lib to load
+	outputControl timeStep;
+	outputInterval OUTPUT_INTERVAL_FORCES;
+	patches (cylinder_upRight_piece_7_3);
+	pName p;
+	UName U;
+	log true; // dump to file
+	rhoInf 1;
+	rhoName rhoInf;
+	CofR ( 0 0 0 );
+	}
+	
+	forces_cylinder_downLeft_piece_7_3
+	{
+	type forces;
+	functionObjectLibs ( "libforces.so" ); // lib to load
+	outputControl timeStep;
+	outputInterval OUTPUT_INTERVAL_FORCES;
+	patches (cylinder_downLeft_piece_7_3);
+	pName p;
+	UName U;
+	log true; // dump to file
+	rhoInf 1;
+	rhoName rhoInf;
+	CofR ( 0 0 0 );
+	}
+	
+	forces_cylinder_upLeft_piece_7_3
+	{
+	type forces;
+	functionObjectLibs ( "libforces.so" ); // lib to load
+	outputControl timeStep;
+	outputInterval OUTPUT_INTERVAL_FORCES;
+	patches (cylinder_upLeft_piece_7_3);
+	pName p;
+	UName U;
+	log true; // dump to file
+	rhoInf 1;
+	rhoName rhoInf;
+	CofR ( 0 0 0 );
+	}
+
+
+//--------------------------
+//##########################
+// +++++++++++++++++++++++
+// -----------------------
+	forces_cylinder_downRight_piece_8_1
+	{
+	type forces;
+	functionObjectLibs ( "libforces.so" ); // lib to load
+	outputControl timeStep;
+	outputInterval OUTPUT_INTERVAL_FORCES;
+	patches (cylinder_downRight_piece_8_1);
+	pName p;
+	UName U;
+	log true; // dump to file
+	rhoInf 1;
+	rhoName rhoInf;
+	CofR ( 0 0 0 );
+	}
+	
+	forces_cylinder_upRight_piece_8_1
+	{
+	type forces;
+	functionObjectLibs ( "libforces.so" ); // lib to load
+	outputControl timeStep;
+	outputInterval OUTPUT_INTERVAL_FORCES;
+	patches (cylinder_upRight_piece_8_1);
+	pName p;
+	UName U;
+	log true; // dump to file
+	rhoInf 1;
+	rhoName rhoInf;
+	CofR ( 0 0 0 );
+	}
+	
+	forces_cylinder_downLeft_piece_8_1
+	{
+	type forces;
+	functionObjectLibs ( "libforces.so" ); // lib to load
+	outputControl timeStep;
+	outputInterval OUTPUT_INTERVAL_FORCES;
+	patches (cylinder_downLeft_piece_8_1);
+	pName p;
+	UName U;
+	log true; // dump to file
+	rhoInf 1;
+	rhoName rhoInf;
+	CofR ( 0 0 0 );
+	}
+	
+	forces_cylinder_upLeft_piece_8_1
+	{
+	type forces;
+	functionObjectLibs ( "libforces.so" ); // lib to load
+	outputControl timeStep;
+	outputInterval OUTPUT_INTERVAL_FORCES;
+	patches (cylinder_upLeft_piece_8_1);
+	pName p;
+	UName U;
+	log true; // dump to file
+	rhoInf 1;
+	rhoName rhoInf;
+	CofR ( 0 0 0 );
+	}
+
+//--------------------------
+	forces_cylinder_downRight_piece_8_2
+	{
+	type forces;
+	functionObjectLibs ( "libforces.so" ); // lib to load
+	outputControl timeStep;
+	outputInterval OUTPUT_INTERVAL_FORCES;
+	patches (cylinder_downRight_piece_8_2);
+	pName p;
+	UName U;
+	log true; // dump to file
+	rhoInf 1;
+	rhoName rhoInf;
+	CofR ( 0 0 0 );
+	}
+	
+	forces_cylinder_upRight_piece_8_2
+	{
+	type forces;
+	functionObjectLibs ( "libforces.so" ); // lib to load
+	outputControl timeStep;
+	outputInterval OUTPUT_INTERVAL_FORCES;
+	patches (cylinder_upRight_piece_8_2);
+	pName p;
+	UName U;
+	log true; // dump to file
+	rhoInf 1;
+	rhoName rhoInf;
+	CofR ( 0 0 0 );
+	}
+	
+	forces_cylinder_downLeft_piece_8_2
+	{
+	type forces;
+	functionObjectLibs ( "libforces.so" ); // lib to load
+	outputControl timeStep;
+	outputInterval OUTPUT_INTERVAL_FORCES;
+	patches (cylinder_downLeft_piece_8_2);
+	pName p;
+	UName U;
+	log true; // dump to file
+	rhoInf 1;
+	rhoName rhoInf;
+	CofR ( 0 0 0 );
+	}
+	
+	forces_cylinder_upLeft_piece_8_2
+	{
+	type forces;
+	functionObjectLibs ( "libforces.so" ); // lib to load
+	outputControl timeStep;
+	outputInterval OUTPUT_INTERVAL_FORCES;
+	patches (cylinder_upLeft_piece_8_2);
+	pName p;
+	UName U;
+	log true; // dump to file
+	rhoInf 1;
+	rhoName rhoInf;
+	CofR ( 0 0 0 );
+	}
+
+//--------------------------
+
+	forces_cylinder_downRight_piece_8_3
+	{
+	type forces;
+	functionObjectLibs ( "libforces.so" ); // lib to load
+	outputControl timeStep;
+	outputInterval OUTPUT_INTERVAL_FORCES;
+	patches (cylinder_downRight_piece_8_3);
+	pName p;
+	UName U;
+	log true; // dump to file
+	rhoInf 1;
+	rhoName rhoInf;
+	CofR ( 0 0 0 );
+	}
+	
+	forces_cylinder_upRight_piece_8_3
+	{
+	type forces;
+	functionObjectLibs ( "libforces.so" ); // lib to load
+	outputControl timeStep;
+	outputInterval OUTPUT_INTERVAL_FORCES;
+	patches (cylinder_upRight_piece_8_3);
+	pName p;
+	UName U;
+	log true; // dump to file
+	rhoInf 1;
+	rhoName rhoInf;
+	CofR ( 0 0 0 );
+	}
+	
+	forces_cylinder_downLeft_piece_8_3
+	{
+	type forces;
+	functionObjectLibs ( "libforces.so" ); // lib to load
+	outputControl timeStep;
+	outputInterval OUTPUT_INTERVAL_FORCES;
+	patches (cylinder_downLeft_piece_8_3);
+	pName p;
+	UName U;
+	log true; // dump to file
+	rhoInf 1;
+	rhoName rhoInf;
+	CofR ( 0 0 0 );
+	}
+	
+	forces_cylinder_upLeft_piece_8_3
+	{
+	type forces;
+	functionObjectLibs ( "libforces.so" ); // lib to load
+	outputControl timeStep;
+	outputInterval OUTPUT_INTERVAL_FORCES;
+	patches (cylinder_upLeft_piece_8_3);
+	pName p;
+	UName U;
+	log true; // dump to file
+	rhoInf 1;
+	rhoName rhoInf;
+	CofR ( 0 0 0 );
+	}
+
+
+//--------------------------
+//##########################
+// +++++++++++++++++++++++
+// -----------------------
+	forces_cylinder_downRight_piece_9_1
+	{
+	type forces;
+	functionObjectLibs ( "libforces.so" ); // lib to load
+	outputControl timeStep;
+	outputInterval OUTPUT_INTERVAL_FORCES;
+	patches (cylinder_downRight_piece_9_1);
+	pName p;
+	UName U;
+	log true; // dump to file
+	rhoInf 1;
+	rhoName rhoInf;
+	CofR ( 0 0 0 );
+	}
+	
+	forces_cylinder_upRight_piece_9_1
+	{
+	type forces;
+	functionObjectLibs ( "libforces.so" ); // lib to load
+	outputControl timeStep;
+	outputInterval OUTPUT_INTERVAL_FORCES;
+	patches (cylinder_upRight_piece_9_1);
+	pName p;
+	UName U;
+	log true; // dump to file
+	rhoInf 1;
+	rhoName rhoInf;
+	CofR ( 0 0 0 );
+	}
+	
+	forces_cylinder_downLeft_piece_9_1
+	{
+	type forces;
+	functionObjectLibs ( "libforces.so" ); // lib to load
+	outputControl timeStep;
+	outputInterval OUTPUT_INTERVAL_FORCES;
+	patches (cylinder_downLeft_piece_9_1);
+	pName p;
+	UName U;
+	log true; // dump to file
+	rhoInf 1;
+	rhoName rhoInf;
+	CofR ( 0 0 0 );
+	}
+	
+	forces_cylinder_upLeft_piece_9_1
+	{
+	type forces;
+	functionObjectLibs ( "libforces.so" ); // lib to load
+	outputControl timeStep;
+	outputInterval OUTPUT_INTERVAL_FORCES;
+	patches (cylinder_upLeft_piece_9_1);
+	pName p;
+	UName U;
+	log true; // dump to file
+	rhoInf 1;
+	rhoName rhoInf;
+	CofR ( 0 0 0 );
+	}
+
+//--------------------------
+	forces_cylinder_downRight_piece_9_2
+	{
+	type forces;
+	functionObjectLibs ( "libforces.so" ); // lib to load
+	outputControl timeStep;
+	outputInterval OUTPUT_INTERVAL_FORCES;
+	patches (cylinder_downRight_piece_9_2);
+	pName p;
+	UName U;
+	log true; // dump to file
+	rhoInf 1;
+	rhoName rhoInf;
+	CofR ( 0 0 0 );
+	}
+	
+	forces_cylinder_upRight_piece_9_2
+	{
+	type forces;
+	functionObjectLibs ( "libforces.so" ); // lib to load
+	outputControl timeStep;
+	outputInterval OUTPUT_INTERVAL_FORCES;
+	patches (cylinder_upRight_piece_9_2);
+	pName p;
+	UName U;
+	log true; // dump to file
+	rhoInf 1;
+	rhoName rhoInf;
+	CofR ( 0 0 0 );
+	}
+	
+	forces_cylinder_downLeft_piece_9_2
+	{
+	type forces;
+	functionObjectLibs ( "libforces.so" ); // lib to load
+	outputControl timeStep;
+	outputInterval OUTPUT_INTERVAL_FORCES;
+	patches (cylinder_downLeft_piece_9_2);
+	pName p;
+	UName U;
+	log true; // dump to file
+	rhoInf 1;
+	rhoName rhoInf;
+	CofR ( 0 0 0 );
+	}
+	
+	forces_cylinder_upLeft_piece_9_2
+	{
+	type forces;
+	functionObjectLibs ( "libforces.so" ); // lib to load
+	outputControl timeStep;
+	outputInterval OUTPUT_INTERVAL_FORCES;
+	patches (cylinder_upLeft_piece_9_2);
+	pName p;
+	UName U;
+	log true; // dump to file
+	rhoInf 1;
+	rhoName rhoInf;
+	CofR ( 0 0 0 );
+	}
+
+//--------------------------
+
+	forces_cylinder_downRight_piece_9_3
+	{
+	type forces;
+	functionObjectLibs ( "libforces.so" ); // lib to load
+	outputControl timeStep;
+	outputInterval OUTPUT_INTERVAL_FORCES;
+	patches (cylinder_downRight_piece_9_3);
+	pName p;
+	UName U;
+	log true; // dump to file
+	rhoInf 1;
+	rhoName rhoInf;
+	CofR ( 0 0 0 );
+	}
+	
+	forces_cylinder_upRight_piece_9_3
+	{
+	type forces;
+	functionObjectLibs ( "libforces.so" ); // lib to load
+	outputControl timeStep;
+	outputInterval OUTPUT_INTERVAL_FORCES;
+	patches (cylinder_upRight_piece_9_3);
+	pName p;
+	UName U;
+	log true; // dump to file
+	rhoInf 1;
+	rhoName rhoInf;
+	CofR ( 0 0 0 );
+	}
+	
+	forces_cylinder_downLeft_piece_9_3
+	{
+	type forces;
+	functionObjectLibs ( "libforces.so" ); // lib to load
+	outputControl timeStep;
+	outputInterval OUTPUT_INTERVAL_FORCES;
+	patches (cylinder_downLeft_piece_9_3);
+	pName p;
+	UName U;
+	log true; // dump to file
+	rhoInf 1;
+	rhoName rhoInf;
+	CofR ( 0 0 0 );
+	}
+	
+	forces_cylinder_upLeft_piece_9_3
+	{
+	type forces;
+	functionObjectLibs ( "libforces.so" ); // lib to load
+	outputControl timeStep;
+	outputInterval OUTPUT_INTERVAL_FORCES;
+	patches (cylinder_upLeft_piece_9_3);
+	pName p;
+	UName U;
+	log true; // dump to file
+	rhoInf 1;
+	rhoName rhoInf;
+	CofR ( 0 0 0 );
+	}
+
+
+//--------------------------
+//##########################
+// +++++++++++++++++++++++
+// -----------------------
+	forces_cylinder_downRight_piece_10_1
+	{
+	type forces;
+	functionObjectLibs ( "libforces.so" ); // lib to load
+	outputControl timeStep;
+	outputInterval OUTPUT_INTERVAL_FORCES;
+	patches (cylinder_downRight_piece_10_1);
+	pName p;
+	UName U;
+	log true; // dump to file
+	rhoInf 1;
+	rhoName rhoInf;
+	CofR ( 0 0 0 );
+	}
+	
+	forces_cylinder_upRight_piece_10_1
+	{
+	type forces;
+	functionObjectLibs ( "libforces.so" ); // lib to load
+	outputControl timeStep;
+	outputInterval OUTPUT_INTERVAL_FORCES;
+	patches (cylinder_upRight_piece_10_1);
+	pName p;
+	UName U;
+	log true; // dump to file
+	rhoInf 1;
+	rhoName rhoInf;
+	CofR ( 0 0 0 );
+	}
+	
+	forces_cylinder_downLeft_piece_10_1
+	{
+	type forces;
+	functionObjectLibs ( "libforces.so" ); // lib to load
+	outputControl timeStep;
+	outputInterval OUTPUT_INTERVAL_FORCES;
+	patches (cylinder_downLeft_piece_10_1);
+	pName p;
+	UName U;
+	log true; // dump to file
+	rhoInf 1;
+	rhoName rhoInf;
+	CofR ( 0 0 0 );
+	}
+	
+	forces_cylinder_upLeft_piece_10_1
+	{
+	type forces;
+	functionObjectLibs ( "libforces.so" ); // lib to load
+	outputControl timeStep;
+	outputInterval OUTPUT_INTERVAL_FORCES;
+	patches (cylinder_upLeft_piece_10_1);
+	pName p;
+	UName U;
+	log true; // dump to file
+	rhoInf 1;
+	rhoName rhoInf;
+	CofR ( 0 0 0 );
+	}
+
+//--------------------------
+	forces_cylinder_downRight_piece_10_2
+	{
+	type forces;
+	functionObjectLibs ( "libforces.so" ); // lib to load
+	outputControl timeStep;
+	outputInterval OUTPUT_INTERVAL_FORCES;
+	patches (cylinder_downRight_piece_10_2);
+	pName p;
+	UName U;
+	log true; // dump to file
+	rhoInf 1;
+	rhoName rhoInf;
+	CofR ( 0 0 0 );
+	}
+	
+	forces_cylinder_upRight_piece_10_2
+	{
+	type forces;
+	functionObjectLibs ( "libforces.so" ); // lib to load
+	outputControl timeStep;
+	outputInterval OUTPUT_INTERVAL_FORCES;
+	patches (cylinder_upRight_piece_10_2);
+	pName p;
+	UName U;
+	log true; // dump to file
+	rhoInf 1;
+	rhoName rhoInf;
+	CofR ( 0 0 0 );
+	}
+	
+	forces_cylinder_downLeft_piece_10_2
+	{
+	type forces;
+	functionObjectLibs ( "libforces.so" ); // lib to load
+	outputControl timeStep;
+	outputInterval OUTPUT_INTERVAL_FORCES;
+	patches (cylinder_downLeft_piece_10_2);
+	pName p;
+	UName U;
+	log true; // dump to file
+	rhoInf 1;
+	rhoName rhoInf;
+	CofR ( 0 0 0 );
+	}
+	
+	forces_cylinder_upLeft_piece_10_2
+	{
+	type forces;
+	functionObjectLibs ( "libforces.so" ); // lib to load
+	outputControl timeStep;
+	outputInterval OUTPUT_INTERVAL_FORCES;
+	patches (cylinder_upLeft_piece_10_2);
+	pName p;
+	UName U;
+	log true; // dump to file
+	rhoInf 1;
+	rhoName rhoInf;
+	CofR ( 0 0 0 );
+	}
+
+//--------------------------
+
+	forces_cylinder_downRight_piece_10_3
+	{
+	type forces;
+	functionObjectLibs ( "libforces.so" ); // lib to load
+	outputControl timeStep;
+	outputInterval OUTPUT_INTERVAL_FORCES;
+	patches (cylinder_downRight_piece_10_3);
+	pName p;
+	UName U;
+	log true; // dump to file
+	rhoInf 1;
+	rhoName rhoInf;
+	CofR ( 0 0 0 );
+	}
+	
+	forces_cylinder_upRight_piece_10_3
+	{
+	type forces;
+	functionObjectLibs ( "libforces.so" ); // lib to load
+	outputControl timeStep;
+	outputInterval OUTPUT_INTERVAL_FORCES;
+	patches (cylinder_upRight_piece_10_3);
+	pName p;
+	UName U;
+	log true; // dump to file
+	rhoInf 1;
+	rhoName rhoInf;
+	CofR ( 0 0 0 );
+	}
+	
+	forces_cylinder_downLeft_piece_10_3
+	{
+	type forces;
+	functionObjectLibs ( "libforces.so" ); // lib to load
+	outputControl timeStep;
+	outputInterval OUTPUT_INTERVAL_FORCES;
+	patches (cylinder_downLeft_piece_10_3);
+	pName p;
+	UName U;
+	log true; // dump to file
+	rhoInf 1;
+	rhoName rhoInf;
+	CofR ( 0 0 0 );
+	}
+	
+	forces_cylinder_upLeft_piece_10_3
+	{
+	type forces;
+	functionObjectLibs ( "libforces.so" ); // lib to load
+	outputControl timeStep;
+	outputInterval OUTPUT_INTERVAL_FORCES;
+	patches (cylinder_upLeft_piece_10_3);
+	pName p;
+	UName U;
+	log true; // dump to file
+	rhoInf 1;
+	rhoName rhoInf;
+	CofR ( 0 0 0 );
+	}
+

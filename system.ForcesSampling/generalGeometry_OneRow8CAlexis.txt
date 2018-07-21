@@ -1,0 +1,9 @@
+ArrayType,OneRow
+NCylBlock,1
+NBX,1
+NBY,8
+SF,1.0,2.0,4.0,8.0,16.0,20.0
+LOneCyl,8.7999912,6.222216,4.44444,3.111108,2.22222,1.999998
+ZOneCyl,4.8
+DC,1.0
+NthetaDiv,240

@@ -1,0 +1,112 @@
+/**************
+//This is the file for an OneRow7C array of 7 cyliders in blocks of one
+//In block numbers the array is 1 x 7, so piece_1_7 is the maximum identification
+//Enjoy
+**************/
+
+
+	forces_cylinder_piece_1_1
+	{
+	type forces;
+	functionObjectLibs ( "libforces.so" ); // lib to load
+	outputControl timeStep;
+	outputInterval OUTPUT_INTERVAL_FORCES;
+	patches (cylinder_piece_1_1);
+	pName p;
+	UName U;
+	log true; // dump to file
+	rhoInf 1;
+	rhoName rhoInf;
+	CofR ( 0 0 0 );
+	}
+
+
+	forces_cylinder_piece_1_2
+	{
+	type forces;
+	functionObjectLibs ( "libforces.so" ); // lib to load
+	outputControl timeStep;
+	outputInterval OUTPUT_INTERVAL_FORCES;
+	patches (cylinder_piece_1_2);
+	pName p;
+	UName U;
+	log true; // dump to file
+	rhoInf 1;
+	rhoName rhoInf;
+	CofR ( 0 0 0 );
+	}
+
+	forces_cylinder_piece_1_3
+	{
+	type forces;
+	functionObjectLibs ( "libforces.so" ); // lib to load
+	outputControl timeStep;
+	outputInterval OUTPUT_INTERVAL_FORCES;
+	patches (cylinder_piece_1_3);
+	pName p;
+	UName U;
+	log true; // dump to file
+	rhoInf 1;
+	rhoName rhoInf;
+	CofR ( 0 0 0 );
+	}
+
+	forces_cylinder_piece_1_4
+	{
+	type forces;
+	functionObjectLibs ( "libforces.so" ); // lib to load
+	outputControl timeStep;
+	outputInterval OUTPUT_INTERVAL_FORCES;
+	patches (cylinder_piece_1_4);
+	pName p;
+	UName U;
+	log true; // dump to file
+	rhoInf 1;
+	rhoName rhoInf;
+	CofR ( 0 0 0 );
+	}
+
+	forces_cylinder_piece_1_5
+	{
+	type forces;
+	functionObjectLibs ( "libforces.so" ); // lib to load
+	outputControl timeStep;
+	outputInterval OUTPUT_INTERVAL_FORCES;
+	patches (cylinder_piece_1_5);
+	pName p;
+	UName U;
+	log true; // dump to file
+	rhoInf 1;
+	rhoName rhoInf;
+	CofR ( 0 0 0 );
+	}
+
+	forces_cylinder_piece_1_6
+	{
+	type forces;
+	functionObjectLibs ( "libforces.so" ); // lib to load
+	outputControl timeStep;
+	outputInterval OUTPUT_INTERVAL_FORCES;
+	patches (cylinder_piece_1_6);
+	pName p;
+	UName U;
+	log true; // dump to file
+	rhoInf 1;
+	rhoName rhoInf;
+	CofR ( 0 0 0 );
+	}
+
+	forces_cylinder_piece_1_7
+	{
+	type forces;
+	functionObjectLibs ( "libforces.so" ); // lib to load
+	outputControl timeStep;
+	outputInterval OUTPUT_INTERVAL_FORCES;
+	patches (cylinder_piece_1_7);
+	pName p;
+	UName U;
+	log true; // dump to file
+	rhoInf 1;
+	rhoName rhoInf;
+	CofR ( 0 0 0 );
+	}	

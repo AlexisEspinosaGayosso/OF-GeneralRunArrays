@@ -1,0 +1,9 @@
+ArrayType,Staggered
+NCylBlock,4
+NBX,6
+NBY,5
+SF,16.0,24.0
+LOneCyl,1.5384576,1.282048
+ZOneCyl,4.8
+DC,1.0
+NthetaDiv,240

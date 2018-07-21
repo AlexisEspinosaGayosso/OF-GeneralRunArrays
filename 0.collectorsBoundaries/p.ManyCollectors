@@ -1,0 +1,923 @@
+    cylinder_downLeft_piece_1_1
+    {
+        type            zeroGradient;
+    }
+    cylinder_upLeft_piece_1_1
+    {
+        type            zeroGradient;
+    }
+    cylinder_upRight_piece_1_1
+    {
+        type            zeroGradient;
+    }
+    cylinder_downRight_piece_1_1
+    {
+        type            zeroGradient;
+    }
+
+    cylinder_downLeft_piece_1_2
+    {
+        type            zeroGradient;
+    }
+    cylinder_upLeft_piece_1_2
+    {
+        type            zeroGradient;
+    }
+    cylinder_upRight_piece_1_2
+    {
+        type            zeroGradient;
+    }
+    cylinder_downRight_piece_1_2
+    {
+        type            zeroGradient;
+    }
+
+    cylinder_downLeft_piece_1_3
+    {
+        type            zeroGradient;
+    }
+    cylinder_upLeft_piece_1_3
+    {
+        type            zeroGradient;
+    }
+    cylinder_upRight_piece_1_3
+    {
+        type            zeroGradient;
+    }
+    cylinder_downRight_piece_1_3
+    {
+        type            zeroGradient;
+    }
+
+    cylinder_downLeft_piece_1_4
+    {
+        type            zeroGradient;
+    }
+    cylinder_upLeft_piece_1_4
+    {
+        type            zeroGradient;
+    }
+    cylinder_upRight_piece_1_4
+    {
+        type            zeroGradient;
+    }
+    cylinder_downRight_piece_1_4
+    {
+        type            zeroGradient;
+    }
+    cylinder_downLeft_piece_1_5
+    {
+        type            zeroGradient;
+    }
+    cylinder_upLeft_piece_1_5
+    {
+        type            zeroGradient;
+    }
+    cylinder_upRight_piece_1_5
+    {
+        type            zeroGradient;
+    }
+    cylinder_downRight_piece_1_5
+    {
+        type            zeroGradient;
+    }
+
+//---------------------------------
+    cylinder_downLeft_piece_2_1
+    {
+        type            zeroGradient;
+    }
+    cylinder_upLeft_piece_2_1
+    {
+        type            zeroGradient;
+    }
+    cylinder_upRight_piece_2_1
+    {
+        type            zeroGradient;
+    }
+    cylinder_downRight_piece_2_1
+    {
+        type            zeroGradient;
+    }
+
+    cylinder_downLeft_piece_2_2
+    {
+        type            zeroGradient;
+    }
+    cylinder_upLeft_piece_2_2
+    {
+        type            zeroGradient;
+    }
+    cylinder_upRight_piece_2_2
+    {
+        type            zeroGradient;
+    }
+    cylinder_downRight_piece_2_2
+    {
+        type            zeroGradient;
+    }
+
+    cylinder_downLeft_piece_2_3
+    {
+        type            zeroGradient;
+    }
+    cylinder_upLeft_piece_2_3
+    {
+        type            zeroGradient;
+    }
+    cylinder_upRight_piece_2_3
+    {
+        type            zeroGradient;
+    }
+    cylinder_downRight_piece_2_3
+    {
+        type            zeroGradient;
+    }
+
+    cylinder_downLeft_piece_2_4
+    {
+        type            zeroGradient;
+    }
+    cylinder_upLeft_piece_2_4
+    {
+        type            zeroGradient;
+    }
+    cylinder_upRight_piece_2_4
+    {
+        type            zeroGradient;
+    }
+    cylinder_downRight_piece_2_4
+    {
+        type            zeroGradient;
+    }
+    cylinder_downLeft_piece_2_5
+    {
+        type            zeroGradient;
+    }
+    cylinder_upLeft_piece_2_5
+    {
+        type            zeroGradient;
+    }
+    cylinder_upRight_piece_2_5
+    {
+        type            zeroGradient;
+    }
+    cylinder_downRight_piece_2_5
+    {
+        type            zeroGradient;
+    }
+
+//---------------------------------
+
+    cylinder_downLeft_piece_3_1
+    {
+        type            zeroGradient;
+    }
+    cylinder_upLeft_piece_3_1
+    {
+        type            zeroGradient;
+    }
+    cylinder_upRight_piece_3_1
+    {
+        type            zeroGradient;
+    }
+    cylinder_downRight_piece_3_1
+    {
+        type            zeroGradient;
+    }
+
+    cylinder_downLeft_piece_3_2
+    {
+        type            zeroGradient;
+    }
+    cylinder_upLeft_piece_3_2
+    {
+        type            zeroGradient;
+    }
+    cylinder_upRight_piece_3_2
+    {
+        type            zeroGradient;
+    }
+    cylinder_downRight_piece_3_2
+    {
+        type            zeroGradient;
+    }
+
+    cylinder_downLeft_piece_3_3
+    {
+        type            zeroGradient;
+    }
+    cylinder_upLeft_piece_3_3
+    {
+        type            zeroGradient;
+    }
+    cylinder_upRight_piece_3_3
+    {
+        type            zeroGradient;
+    }
+    cylinder_downRight_piece_3_3
+    {
+        type            zeroGradient;
+    }
+
+    cylinder_downLeft_piece_3_4
+    {
+        type            zeroGradient;
+    }
+    cylinder_upLeft_piece_3_4
+    {
+        type            zeroGradient;
+    }
+    cylinder_upRight_piece_3_4
+    {
+        type            zeroGradient;
+    }
+    cylinder_downRight_piece_3_4
+    {
+        type            zeroGradient;
+    }
+    cylinder_downLeft_piece_3_5
+    {
+        type            zeroGradient;
+    }
+    cylinder_upLeft_piece_3_5
+    {
+        type            zeroGradient;
+    }
+    cylinder_upRight_piece_3_5
+    {
+        type            zeroGradient;
+    }
+    cylinder_downRight_piece_3_5
+    {
+        type            zeroGradient;
+    }
+
+//---------------------------------
+    cylinder_downLeft_piece_4_1
+    {
+        type            zeroGradient;
+    }
+    cylinder_upLeft_piece_4_1
+    {
+        type            zeroGradient;
+    }
+    cylinder_upRight_piece_4_1
+    {
+        type            zeroGradient;
+    }
+    cylinder_downRight_piece_4_1
+    {
+        type            zeroGradient;
+    }
+
+    cylinder_downLeft_piece_4_2
+    {
+        type            zeroGradient;
+    }
+    cylinder_upLeft_piece_4_2
+    {
+        type            zeroGradient;
+    }
+    cylinder_upRight_piece_4_2
+    {
+        type            zeroGradient;
+    }
+    cylinder_downRight_piece_4_2
+    {
+        type            zeroGradient;
+    }
+
+    cylinder_downLeft_piece_4_3
+    {
+        type            zeroGradient;
+    }
+    cylinder_upLeft_piece_4_3
+    {
+        type            zeroGradient;
+    }
+    cylinder_upRight_piece_4_3
+    {
+        type            zeroGradient;
+    }
+    cylinder_downRight_piece_4_3
+    {
+        type            zeroGradient;
+    }
+
+    cylinder_downLeft_piece_4_4
+    {
+        type            zeroGradient;
+    }
+    cylinder_upLeft_piece_4_4
+    {
+        type            zeroGradient;
+    }
+    cylinder_upRight_piece_4_4
+    {
+        type            zeroGradient;
+    }
+    cylinder_downRight_piece_4_4
+    {
+        type            zeroGradient;
+    }
+    cylinder_downLeft_piece_4_5
+    {
+        type            zeroGradient;
+    }
+    cylinder_upLeft_piece_4_5
+    {
+        type            zeroGradient;
+    }
+    cylinder_upRight_piece_4_5
+    {
+        type            zeroGradient;
+    }
+    cylinder_downRight_piece_4_5
+    {
+        type            zeroGradient;
+    }
+
+//---------------------------------
+    cylinder_downLeft_piece_5_1
+    {
+        type            zeroGradient;
+    }
+    cylinder_upLeft_piece_5_1
+    {
+        type            zeroGradient;
+    }
+    cylinder_upRight_piece_5_1
+    {
+        type            zeroGradient;
+    }
+    cylinder_downRight_piece_5_1
+    {
+        type            zeroGradient;
+    }
+
+    cylinder_downLeft_piece_5_2
+    {
+        type            zeroGradient;
+    }
+    cylinder_upLeft_piece_5_2
+    {
+        type            zeroGradient;
+    }
+    cylinder_upRight_piece_5_2
+    {
+        type            zeroGradient;
+    }
+    cylinder_downRight_piece_5_2
+    {
+        type            zeroGradient;
+    }
+
+    cylinder_downLeft_piece_5_3
+    {
+        type            zeroGradient;
+    }
+    cylinder_upLeft_piece_5_3
+    {
+        type            zeroGradient;
+    }
+    cylinder_upRight_piece_5_3
+    {
+        type            zeroGradient;
+    }
+    cylinder_downRight_piece_5_3
+    {
+        type            zeroGradient;
+    }
+
+    cylinder_downLeft_piece_5_4
+    {
+        type            zeroGradient;
+    }
+    cylinder_upLeft_piece_5_4
+    {
+        type            zeroGradient;
+    }
+    cylinder_upRight_piece_5_4
+    {
+        type            zeroGradient;
+    }
+    cylinder_downRight_piece_5_4
+    {
+        type            zeroGradient;
+    }
+    cylinder_downLeft_piece_5_5
+    {
+        type            zeroGradient;
+    }
+    cylinder_upLeft_piece_5_5
+    {
+        type            zeroGradient;
+    }
+    cylinder_upRight_piece_5_5
+    {
+        type            zeroGradient;
+    }
+    cylinder_downRight_piece_5_5
+    {
+        type            zeroGradient;
+    }
+
+//---------------------------------
+
+    cylinder_downLeft_piece_6_1
+    {
+        type            zeroGradient;
+    }
+    cylinder_upLeft_piece_6_1
+    {
+        type            zeroGradient;
+    }
+    cylinder_upRight_piece_6_1
+    {
+        type            zeroGradient;
+    }
+    cylinder_downRight_piece_6_1
+    {
+        type            zeroGradient;
+    }
+
+    cylinder_downLeft_piece_6_2
+    {
+        type            zeroGradient;
+    }
+    cylinder_upLeft_piece_6_2
+    {
+        type            zeroGradient;
+    }
+    cylinder_upRight_piece_6_2
+    {
+        type            zeroGradient;
+    }
+    cylinder_downRight_piece_6_2
+    {
+        type            zeroGradient;
+    }
+
+    cylinder_downLeft_piece_6_3
+    {
+        type            zeroGradient;
+    }
+    cylinder_upLeft_piece_6_3
+    {
+        type            zeroGradient;
+    }
+    cylinder_upRight_piece_6_3
+    {
+        type            zeroGradient;
+    }
+    cylinder_downRight_piece_6_3
+    {
+        type            zeroGradient;
+    }
+
+    cylinder_downLeft_piece_6_4
+    {
+        type            zeroGradient;
+    }
+    cylinder_upLeft_piece_6_4
+    {
+        type            zeroGradient;
+    }
+    cylinder_upRight_piece_6_4
+    {
+        type            zeroGradient;
+    }
+    cylinder_downRight_piece_6_4
+    {
+        type            zeroGradient;
+    }
+    cylinder_downLeft_piece_6_5
+    {
+        type            zeroGradient;
+    }
+    cylinder_upLeft_piece_6_5
+    {
+        type            zeroGradient;
+    }
+    cylinder_upRight_piece_6_5
+    {
+        type            zeroGradient;
+    }
+    cylinder_downRight_piece_6_5
+    {
+        type            zeroGradient;
+    }
+//------------------------------------------
+    cylinder_downLeft_piece_7_1
+    {
+        type            zeroGradient;
+
+    }
+    cylinder_upLeft_piece_7_1
+    {
+        type            zeroGradient;
+
+    }
+    cylinder_upRight_piece_7_1
+    {
+        type            zeroGradient;
+
+    }
+    cylinder_downRight_piece_7_1
+    {
+        type            zeroGradient;
+
+    }
+
+    cylinder_downLeft_piece_7_2
+    {
+        type            zeroGradient;
+
+    }
+    cylinder_upLeft_piece_7_2
+    {
+        type            zeroGradient;
+
+    }
+    cylinder_upRight_piece_7_2
+    {
+        type            zeroGradient;
+
+    }
+    cylinder_downRight_piece_7_2
+    {
+        type            zeroGradient;
+
+    }
+
+    cylinder_downLeft_piece_7_3
+    {
+        type            zeroGradient;
+
+    }
+    cylinder_upLeft_piece_7_3
+    {
+        type            zeroGradient;
+
+    }
+    cylinder_upRight_piece_7_3
+    {
+        type            zeroGradient;
+
+    }
+    cylinder_downRight_piece_7_3
+    {
+        type            zeroGradient;
+
+    }
+    cylinder_downLeft_piece_7_4
+    {
+        type            zeroGradient;
+
+    }
+    cylinder_upLeft_piece_7_4
+    {
+        type            zeroGradient;
+
+    }
+    cylinder_upRight_piece_7_4
+    {
+        type            zeroGradient;
+
+    }
+    cylinder_downRight_piece_7_4
+    {
+        type            zeroGradient;
+
+    }
+    cylinder_downLeft_piece_7_5
+    {
+        type            zeroGradient;
+
+    }
+    cylinder_upLeft_piece_7_5
+    {
+        type            zeroGradient;
+
+    }
+    cylinder_upRight_piece_7_5
+    {
+        type            zeroGradient;
+
+    }
+    cylinder_downRight_piece_7_5
+    {
+        type            zeroGradient;
+
+    }
+//-------------------------------------
+//------------------------------------------
+    cylinder_downLeft_piece_8_1
+    {
+        type            zeroGradient;
+
+    }
+    cylinder_upLeft_piece_8_1
+    {
+        type            zeroGradient;
+
+    }
+    cylinder_upRight_piece_8_1
+    {
+        type            zeroGradient;
+
+    }
+    cylinder_downRight_piece_8_1
+    {
+        type            zeroGradient;
+
+    }
+
+    cylinder_downLeft_piece_8_2
+    {
+        type            zeroGradient;
+
+    }
+    cylinder_upLeft_piece_8_2
+    {
+        type            zeroGradient;
+
+    }
+    cylinder_upRight_piece_8_2
+    {
+        type            zeroGradient;
+
+    }
+    cylinder_downRight_piece_8_2
+    {
+        type            zeroGradient;
+
+    }
+
+    cylinder_downLeft_piece_8_3
+    {
+        type            zeroGradient;
+
+    }
+    cylinder_upLeft_piece_8_3
+    {
+        type            zeroGradient;
+
+    }
+    cylinder_upRight_piece_8_3
+    {
+        type            zeroGradient;
+
+    }
+    cylinder_downRight_piece_8_3
+    {
+        type            zeroGradient;
+
+    }
+    cylinder_downLeft_piece_8_4
+    {
+        type            zeroGradient;
+
+    }
+    cylinder_upLeft_piece_8_4
+    {
+        type            zeroGradient;
+
+    }
+    cylinder_upRight_piece_8_4
+    {
+        type            zeroGradient;
+
+    }
+    cylinder_downRight_piece_8_4
+    {
+        type            zeroGradient;
+
+    }
+    cylinder_downLeft_piece_8_5
+    {
+        type            zeroGradient;
+
+    }
+    cylinder_upLeft_piece_8_5
+    {
+        type            zeroGradient;
+
+    }
+    cylinder_upRight_piece_8_5
+    {
+        type            zeroGradient;
+
+    }
+    cylinder_downRight_piece_8_5
+    {
+        type            zeroGradient;
+
+    }
+//------------------------------------------
+    cylinder_downLeft_piece_9_1
+    {
+        type            zeroGradient;
+
+    }
+    cylinder_upLeft_piece_9_1
+    {
+        type            zeroGradient;
+
+    }
+    cylinder_upRight_piece_9_1
+    {
+        type            zeroGradient;
+
+    }
+    cylinder_downRight_piece_9_1
+    {
+        type            zeroGradient;
+
+    }
+
+    cylinder_downLeft_piece_9_2
+    {
+        type            zeroGradient;
+
+    }
+    cylinder_upLeft_piece_9_2
+    {
+        type            zeroGradient;
+
+    }
+    cylinder_upRight_piece_9_2
+    {
+        type            zeroGradient;
+
+    }
+    cylinder_downRight_piece_9_2
+    {
+        type            zeroGradient;
+
+    }
+
+    cylinder_downLeft_piece_9_3
+    {
+        type            zeroGradient;
+
+    }
+    cylinder_upLeft_piece_9_3
+    {
+        type            zeroGradient;
+
+    }
+    cylinder_upRight_piece_9_3
+    {
+        type            zeroGradient;
+
+    }
+    cylinder_downRight_piece_9_3
+    {
+        type            zeroGradient;
+
+    }
+    cylinder_downLeft_piece_9_4
+    {
+        type            zeroGradient;
+
+    }
+    cylinder_upLeft_piece_9_4
+    {
+        type            zeroGradient;
+
+    }
+    cylinder_upRight_piece_9_4
+    {
+        type            zeroGradient;
+
+    }
+    cylinder_downRight_piece_9_4
+    {
+        type            zeroGradient;
+
+    }
+    cylinder_downLeft_piece_9_5
+    {
+        type            zeroGradient;
+
+    }
+    cylinder_upLeft_piece_9_5
+    {
+        type            zeroGradient;
+
+    }
+    cylinder_upRight_piece_9_5
+    {
+        type            zeroGradient;
+
+    }
+    cylinder_downRight_piece_9_5
+    {
+        type            zeroGradient;
+
+    }
+//------------------------------------------
+    cylinder_downLeft_piece_10_1
+    {
+        type            zeroGradient;
+
+    }
+    cylinder_upLeft_piece_10_1
+    {
+        type            zeroGradient;
+
+    }
+    cylinder_upRight_piece_10_1
+    {
+        type            zeroGradient;
+
+    }
+    cylinder_downRight_piece_10_1
+    {
+        type            zeroGradient;
+
+    }
+
+    cylinder_downLeft_piece_10_2
+    {
+        type            zeroGradient;
+
+    }
+    cylinder_upLeft_piece_10_2
+    {
+        type            zeroGradient;
+
+    }
+    cylinder_upRight_piece_10_2
+    {
+        type            zeroGradient;
+
+    }
+    cylinder_downRight_piece_10_2
+    {
+        type            zeroGradient;
+
+    }
+
+    cylinder_downLeft_piece_10_3
+    {
+        type            zeroGradient;
+
+    }
+    cylinder_upLeft_piece_10_3
+    {
+        type            zeroGradient;
+
+    }
+    cylinder_upRight_piece_10_3
+    {
+        type            zeroGradient;
+
+    }
+    cylinder_downRight_piece_10_3
+    {
+        type            zeroGradient;
+
+    }
+    cylinder_downLeft_piece_10_4
+    {
+        type            zeroGradient;
+
+    }
+    cylinder_upLeft_piece_10_4
+    {
+        type            zeroGradient;
+
+    }
+    cylinder_upRight_piece_10_4
+    {
+        type            zeroGradient;
+
+    }
+    cylinder_downRight_piece_10_4
+    {
+        type            zeroGradient;
+
+    }
+    cylinder_downLeft_piece_10_5
+    {
+        type            zeroGradient;
+
+    }
+    cylinder_upLeft_piece_10_5
+    {
+        type            zeroGradient;
+
+    }
+    cylinder_upRight_piece_10_5
+    {
+        type            zeroGradient;
+
+    }
+    cylinder_downRight_piece_10_5
+    {
+        type            zeroGradient;
+
+    }

@@ -1,0 +1,152 @@
+/*--------------------------------*- C++ -*----------------------------------*\
+| =========                 |                                                 |
+| \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox           |
+|  \\    /   O peration     | Version:  2.2.2                                 |
+|   \\  /    A nd           | Web:      www.OpenFOAM.org                      |
+|    \\/     M anipulation  |                                                 |
+\*---------------------------------------------------------------------------*/
+FoamFile
+{
+    version     2.0;
+    format      ascii;
+    class       dictionary;
+    location    "system";
+    object      controlDict;
+}
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+
+//AEG: Machote for Full Array Inline120 VF8.0
+//***********************************************************************//
+
+//AEG: Not using the body force
+/*libs
+(
+    "libuserfvOptions.so"
+);*/
+
+application     myPimpleFoam;
+
+startFrom       startTime; //latestTime;
+
+startTime       ALE_STARTTIME;
+
+stopAt          endTime;
+
+endTime         ALE_FINALTIME;
+
+deltaT          0.0002;   //For Re=100 Dc=1m, U=1m/s, Td=1s, delta0=2E-4;
+
+writeControl    adjustableRunTime;
+
+writeInterval   0.075; //For Re=100 Dc=1m, U=1m/s, Td=1s, St=0.15, Ts=6.6s
+
+purgeWrite      100; //For Re=100 Dc=1m, U=1m/s, Td=1s, St=0.15, Ts=6.6s
+
+writeFormat     binary;
+
+writePrecision  15;
+
+writeCompression uncompressed;
+
+timeFormat      general;
+
+timePrecision   15;
+
+runTimeModifiable no;
+
+adjustTimeStep yes;
+
+maxCo         0.5;
+
+maxAlphaCo 0.5;
+
+
+// ************************************************************************* //
+
+functions
+{
+	fieldAverage1
+    {
+        type            fieldAverage;
+        functionObjectLibs ("libfieldFunctionObjects.so");
+        enabled         ALE_AVERAGE_ENABLED;
+        outputControl   outputTime; //runTime;
+		  writeInterval   1; //0.2;
+
+        fields
+        (
+            U
+            {
+                mean        on;
+                prime2Mean  on;
+                base        time;
+            }
+
+            p
+            {
+                mean        on;
+                prime2Mean  on;
+                base        time;
+            }
+			
+			dUdt
+            {
+                mean        on;
+                prime2Mean  on;
+                base        time;
+            }
+	    
+        );
+    }
+	
+/*	spatialTemporalAveragedUdt
+	{
+		type cellSource;
+		functionObjectLibs ("libfieldFunctionObjects.so");
+		enabled true;
+		outputControl timeStep;
+		outputInterval 10;
+		log false; // log to screen?
+		valueOutput false; // Write values at run-time output times?
+		source all; //cellZone; // cellZone or all
+		//sourceName Box2;
+		operation volIntegrate;
+		fields
+		(
+			dUdt
+			U
+		);
+	}*/
+
+	
+/*	forces_bed
+	{
+	type forces;
+	functionObjectLibs ( "libforces.so" ); // lib to load
+	outputControl timeStep;
+	outputInterval 10;
+	patches (bed_left bed_right);
+	pName p;
+	UName U;
+	log true; // dump to file
+	rhoInf 1000;
+	rhoName rhoInf;
+	CofR ( 0 0 0 );
+	}*/
+
+//--------------------------
+//##########################
+
+#include "./system/forcesCylinder.txt"
+
+#include "./system/samplingRings.txt"
+
+#include "./system/additionalRings.txt"
+
+#include "./system/samplingLines.txt"
+
+//--------------------------
+//##########################
+
+}
+

@@ -1,0 +1,47 @@
+/*--------------------------------*- C++ -*----------------------------------*\
+| =========                 |                                                 |
+| \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox           |
+|  \\    /   O peration     | Version:  2.2.2                                 |
+|   \\  /    A nd           | Web:      www.OpenFOAM.org                      |
+|    \\/     M anipulation  |                                                 |
+\*---------------------------------------------------------------------------*/
+FoamFile
+{
+    version     2.0;
+    format      ascii;
+    class       dictionary;
+    location    "system";
+    object      decomposeParDict;
+}
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+
+numberOfSubdomains NSUBDOMAINS;
+
+//method          simple;
+method          scotch;
+//preservePatches ( leftC_Final rightC_Final upC_Final downC_Final); //Used for the full cycle cell
+//preservePatches ( upC_Final downC_Final); //used for the Full Arrays with cyclic boundaries in Y
+// simpleCoeffs
+// {
+//     n               ( 6 4 1 );
+//     delta           0.001;
+ //}
+
+// hierarchicalCoeffs
+// {
+    // n               ( 1 1 1 );
+    // delta           0.001;
+    // order           xyz;
+// }
+
+// manualCoeffs
+// {
+    // dataFile        "";
+// }
+
+distributed     no;
+
+roots           ( );
+
+
+// ************************************************************************* //

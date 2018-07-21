@@ -1,0 +1,9 @@
+ArrayType,Single
+NCylBlock,1
+NBX,1
+NBY,1
+SF,0.0
+LOneCyl,1.0
+ZOneCyl,4.8
+DC,1.0
+NthetaDiv,1488

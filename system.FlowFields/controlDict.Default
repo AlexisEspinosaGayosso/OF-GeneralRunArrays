@@ -1,0 +1,63 @@
+/*--------------------------------*- C++ -*----------------------------------*\
+| =========                 |                                                 |
+| \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox           |
+|  \\    /   O peration     | Version:  2.2.2                                 |
+|   \\  /    A nd           | Web:      www.OpenFOAM.org                      |
+|    \\/     M anipulation  |                                                 |
+\*---------------------------------------------------------------------------*/
+FoamFile
+{
+    version     2.0;
+    format      ascii;
+    class       dictionary;
+    location    "system";
+    object      controlDict;
+}
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+
+//AEG: Machote for Full Array Inline120 VF8.0
+//***********************************************************************//
+
+//AEG: Not using the body force
+/*libs
+(
+    "libuserfvOptions.so"
+);*/
+
+application     myPimpleFoam;
+
+startFrom       startTime; //latestTime;
+
+startTime       119.55;
+
+stopAt          endTime;
+
+endTime         180;
+
+deltaT          0.0002;   //For Re=100 Dc=1m, U=1m/s, Td=1s, delta0=2E-4;
+
+writeControl    adjustableRunTime;
+
+writeInterval   0.075; //For Re=100 Dc=1m, U=1m/s, Td=1s, St=0.15, Ts=6.6s
+
+purgeWrite      100; //For Re=100 Dc=1m, U=1m/s, Td=1s, St=0.15, Ts=6.6s
+
+writeFormat     binary;
+
+writePrecision  15;
+
+writeCompression uncompressed;
+
+timeFormat      general;
+
+timePrecision   15;
+
+runTimeModifiable no;
+
+adjustTimeStep yes;
+
+maxCo         0.5;
+
+maxAlphaCo 0.5;
+
+

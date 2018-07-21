@@ -1,0 +1,25 @@
+/**************
+//This is the file for an Staggered array of 120 cyliders in blocks of four
+//In block numbers the array is 6 x 5, so piece_6_5 is the maximum identification
+//Enjoy
+**************/
+
+// +++++++++++++++++++++++
+// -----------------------
+	forces_cylinder_single
+	{
+	type forces;
+	functionObjectLibs ( "libforces.so" ); // lib to load
+	outputControl timeStep;
+	outputInterval OUTPUT_INTERVAL_FORCES;
+	patches (cylinder);
+	pName p;
+	UName U;
+	log true; // dump to file
+	rhoInf 1;
+	rhoName rhoInf;
+	CofR ( 0 0 0 );
+	}	
+
+//--------------------------
+//##########################
