@@ -1,4 +1,4 @@
-#!/bin/bash -l
+#!/bin/bash
 #AEG: This is the internal part of script for sampling the mean values for the latest time
 #-------------------------------------------------------------------------
 #-------------------------------------------------------------------------
@@ -20,11 +20,13 @@
 #-------------------------------------------------------------------------
 #-------------------------------------------------------------------------
 #Working Directories
-baseDir=/scratch/pawsey0106/espinosa/OpenFOAM/espinosa-$FOAMVersion/run
+#baseDir=/scratch/pawsey0106/espinosa/OpenFOAM/espinosa-$FOAMVersion/run
+baseDir=$MYSCRATCH/OpenFOAM/espinosa-$FOAMVersion/run
 #previousDir=
 #workingDir=AEG. Defined in the main calling program
 #nextDir=
-functionsD=/home/espinosa/bash_functions
+#functionsD=/home/espinosa/bash_functions
+functionsD=$HOME/bash_functions
 #GeneralDir=AEG. Defined in the main calling program
 
 #-------------------------------------------------------------------------
@@ -808,3 +810,7 @@ mv ./postProcessing/sets/$sampleTime/*VerticalMeanLine* ./postProcessing/arrayMe
 cd $baseDir/$workingDir
 echo "Sample means finished" | tee -a ${logJob}
 exit 0
+
+#-----------------------------------------
+#Add a mark for last changes: (for rsync to pick it up with --only-size)
+#2018.07.26
