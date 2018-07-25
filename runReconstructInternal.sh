@@ -1,4 +1,4 @@
-#!/bin/bash -l
+#!/bin/bash
 
 #-----------------------------------------
 # General
@@ -16,10 +16,12 @@
 
 #-----------------------------------------
 #Working Directories
-baseDir=/scratch/pawsey0106/espinosa/OpenFOAM/espinosa-$FOAMVersion/run
+#baseDir=/scratch/pawsey0106/espinosa/OpenFOAM/espinosa-$FOAMVersion/run
+baseDir=$MYGROUP/OpenFOAM/espinosa-$FOAMVersion/run
 #workingDir=AEG. Defined in the main calling program
 #GeneralDir=AEG. Defined in the main calling program
-functionsD=/home/espinosa/bash_functions
+#functionsD=/home/espinosa/bash_functions
+functionsD=$HOME/bash_functions
 
 #-----------------------------------------
 # Number of last times saved in the purgeWrite (as defined in controlDict)
@@ -210,5 +212,9 @@ fi
 #End
 echo "Reconstruction finished" | tee -a ${logJob}
 echo "Last reconstruction was ${jTime}" | tee -a ${logJob}
+
+#-----------------------------------------
+#Add a mark for last changes: (for rsync to pick it up with --only-size)
+#2018.07.26
 
 

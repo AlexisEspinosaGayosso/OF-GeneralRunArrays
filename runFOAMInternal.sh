@@ -1,4 +1,4 @@
-#!/bin/bash -l
+#!/bin/bash
 #AEG: This is the internal part of the runFOAM script for general runs
 #Good luck!
 
@@ -41,11 +41,13 @@ fi
 #-------------------------------------------------------------------------
 #-------------------------------------------------------------------------
 #Working Directories
-baseDir=/scratch/pawsey0106/espinosa/OpenFOAM/espinosa-$FOAMVersion/run
+#baseDir=/scratch/pawsey0106/espinosa/OpenFOAM/espinosa-$FOAMVersion/run
+baseDir=$MYSCRATCH/OpenFOAM/espinosa-$FOAMVersion/run
 #previousDir=
 #workingDir=AEG. Defined in the main calling program
 #nextDir=
-functionsD=/home/espinosa/bash_functions
+#functionsD=/home/espinosa/bash_functions
+functionsD=$HOME/bash_functions
 #GeneralDir=AEG. Defined in the main calling program
 
 #-------------------------------------------------------------------------
@@ -415,3 +417,7 @@ cd $baseDir/$workingDir
 # End
 echo "Case run Finished" | tee -a ${logJob}
 exit 0
+
+#-----------------------------------------
+#Add a mark for last changes: (for rsync to pick it up with --only-size)
+#2018.07.26
