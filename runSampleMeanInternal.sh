@@ -364,7 +364,7 @@ for j in `seq 0 ${nCheckDirectories}`; do
       then
          echo "NO time directories available in ${checkingDirectories[$j]}" | tee -a ${logJob}
          checkForNewMean=false
-         echo "Exiting because NO time directories available but .done file exists" | tee -a ${logJob}
+         echo "Exiting because NO time directories available but .done* file exists" | tee -a ${logJob}
          exit 4
       else
           maxMeanSeen=${meanDirArr[0]}
@@ -381,10 +381,10 @@ for j in `seq 0 ${nCheckDirectories}`; do
       echo "maxMeanSeen:${maxMeanSeen} >= endTime:${endTime}" | tee -a ${logJob}
    else
       if [ "$checkForNewMean" = "true" ]; then
-         echo "Removing .done file: ${checkingFiles[$j]} as a new Mean has been detected" | tee -a ${logJob}
+         echo "Removing the flag file: ${checkingFiles[$j]} as a new Mean has been detected" | tee -a ${logJob}
          echo "maxMeanSeen:${maxMeanSeen} < endTime:${endTime}" | tee -a ${logJob}
       else
-         echo "Removing .done file: ${checkingFiles[$j]} as ${checkingDirectories[$j]} is not done" | tee -a ${logJob}
+         echo "Removing the flag file: ${checkingFiles[$j]} as ${checkingDirectories[$j]} is not done" | tee -a ${logJob}
       fi
       rm -f ./${checkingFiles[$j]}
    fi
@@ -399,17 +399,17 @@ done
 #repeatingScript=AEG. Defined in the main calling program
 cd $baseDir/$workingDir
 if [ ! -f ./postProcessing/.doneMeanPRing ] || [ ! -f ./postProcessing/.doneMeanURing ] || [ ! -f ./postProcessing/.doneMeanForces ] || [ ! -f ./postProcessing/.doneMeanPAdditionalRing ] || [ ! -f ./postProcessing/.doneMeanUAdditionalRing ] || [ ! -f ./postProcessing/.doneMeanUPLines ]; then
-   echo "Sending repeated this script: ${repeatingScript} as all .done files are not present." | tee -a ${logJob}
+   echo "Sending repeated this script: ${repeatingScript} as all .done* files are not present." | tee -a ${logJob}
    sbatch --dependency=afterany:${SLURM_JOB_ID} $repeatingScript
 else
-   echo "All .done files are present." | tee -a ${logJob}
+   echo "All .done* files are present." | tee -a ${logJob}
    if [ "$useDependantCycle" = "true" ]; then
       echo "Sending the dependant job: ${dependantScript}" | tee -a ${logJob}
       sbatch --dependency=afterany:${SLURM_JOB_ID} $dependantScript
    else
       echo "useDependantCycle=false, therefore NOT SENDING the dependant script" | tee -a ${logJob}
    fi
-   echo "Now exiting as All .done files are present." | tee -a ${logJob}
+   echo "Now exiting as All .done* files are present." | tee -a ${logJob}
    exit 0
 fi
 
