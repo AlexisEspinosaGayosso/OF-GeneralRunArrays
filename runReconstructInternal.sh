@@ -17,11 +17,7 @@
 #-----------------------------------------
 #Working Directories
 #baseDir=/scratch/pawsey0106/espinosa/OpenFOAM/espinosa-$FOAMVersion/run
-<<<<<<< HEAD
 baseDir=$MYSCRATCH/OpenFOAM/espinosa-$FOAMVersion/run
-=======
-baseDir=$MYGROUP/OpenFOAM/espinosa-$FOAMVersion/run
->>>>>>> 8b986482d893e32923f00ae2e2898acc8f718cb3
 #workingDir=AEG. Defined in the main calling program
 #GeneralDir=AEG. Defined in the main calling program
 #functionsD=/home/espinosa/bash_functions
