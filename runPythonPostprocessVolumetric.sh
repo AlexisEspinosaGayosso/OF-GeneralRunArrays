@@ -1,4 +1,4 @@
-#!/bin/bash -l
+#!/bin/bash
 #AEG: This is the internal part of the python posprocessing script
 
 #-----------------------------------------
@@ -585,3 +585,7 @@ fi
 # End
 echo "Volumetric Python Analysis Finished" | tee -a ${logJob}
 exit 0
+
+#-----------------------------------------
+#Add a mark for last changes: (for rsync to pick it up with --only-size)
+#2018.07.27

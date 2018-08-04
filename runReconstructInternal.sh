@@ -82,6 +82,7 @@ if [ "${THISHOST:0:1}" = "z" ]; then
 elif [ "${THISHOST:0:1}" = "n" ]; then
    source $MYGROUP/OpenFOAM/OpenFOAM-$FOAMVersion/etc/bashrc
 fi
+echo "The variable \$FOAM_SRC=${FOAM_SRC}"
 
 #-----------------------------------------
 #Sourcing the floating point function defininitons
@@ -188,7 +189,7 @@ do
       if [ "${THISHOST:0:1}" = "z" ]; then
          reconstructPar -time "${jTime}" > "logR${jTime}" 2>&1
       elif [ "${THISHOST:0:1}" = "n" ]; then
-         srun -n 1 reconstructPar -time "${jTime}" > "logR${jTime}" 2>&1
+         srun --export=all -n 1 reconstructPar -time "${jTime}" > "logR${jTime}" 2>&1
       fi
       touch "./${jTime}/.done"
       date | tee -a ${logJob}
@@ -204,7 +205,7 @@ else
    if [ "${THISHOST:0:1}" = "z" ]; then
       reconstructPar -time "${jTime}" > "logR${jTime}" 2>&1
    elif [ "${THISHOST:0:1}" = "n" ]; then
-      srun -n 1 reconstructPar -time "${jTime}" > "logR${jTime}" 2>&1
+      srun --export=all -n 1 reconstructPar -time "${jTime}" > "logR${jTime}" 2>&1
    fi
    touch "./${jTime}/.done"
    date | tee -a ${logJob}
